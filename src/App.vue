@@ -1,32 +1,44 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <v-card class="overflow-hidden">
+      <v-app-bar
+        id="appbar"
+        absolute
+        dark
+        hide-on-scroll
+        prominent
+        scroll-target="#scrolling-techniques-4"
+      >
+        <v-avatar id="camper" :tile="true">
+          <img :src="require('@/assets/camper.png')" alt="logo" />
+        </v-avatar>
+        <v-spacer></v-spacer>
+
+        <v-btn> Magaza Bul </v-btn>
+
+        <v-btn> HESABIM </v-btn>
+
+        <v-btn icon>
+          <v-icon>mdi-bag-personal</v-icon>
+        </v-btn>
+      </v-app-bar>
+      <v-sheet
+        id="scrolling-techniques-4"
+        class="overflow-y-auto"
+        max-height="4000"
+      >
+        <v-container style="height: 1000px"></v-container>
+      </v-sheet>
+    </v-card>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+#appbar {
+  max-height: 50px;
+  background-color: grey;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#camper {
+  width: 20px;
 }
 </style>
