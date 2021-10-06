@@ -1,35 +1,8 @@
 <template>
-  <div>
-    <v-card class="overflow-hidden">
-      <v-app-bar
-        id="appbar"
-        absolute
-        dark
-        hide-on-scroll
-        prominent
-        scroll-target="#scrolling-techniques-4"
-      >
-        <v-avatar id="camper" :tile="true">
-          <img :src="require('@/assets/camper.png')" alt="logo" />
-        </v-avatar>
-        <v-spacer></v-spacer>
-
-        <v-btn> Magaza Bul </v-btn>
-
-        <v-btn> HESABIM </v-btn>
-
-        <v-btn icon>
-          <v-icon>mdi-bag-personal</v-icon>
-        </v-btn>
-      </v-app-bar>
-      <v-sheet
-        id="scrolling-techniques-4"
-        class="overflow-y-auto"
-        max-height="4000"
-      >
-        <v-container style="height: 1000px"></v-container>
-      </v-sheet>
-    </v-card>
+  <div id="app">
+    <header>
+      <Navbar />
+    </header>
   </div>
 </template>
 
@@ -41,4 +14,29 @@
 #camper {
   width: 20px;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", sans-serif;
+}
+header {
+  width: 100vw;
+  background-color: #222;
+  padding: 15px;
+}
 </style>
+
+<script>
+import Navbar from "./components/Navbar";
+export default {
+  name: "app",
+  components: {
+    Navbar,
+  },
+};
+</script>
+
+
