@@ -57,10 +57,54 @@
         ></v-img>
       </v-col>
     </v-row>
+    <v-footer padless>
+      <v-card flat tile class="text-center">
+        <v-card-text class="white--text pt-0">
+          Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin bir parçası olmak
+          size özel promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve
+          %10 İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
+          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
+          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
+          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
+          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
+          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
+          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
+          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
+          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
+          promosyonlara ve hikayelere erişim
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-text id="text">
+          <v-card-text id="date"
+            >{{ new Date().getFullYear() }} —
+            <strong>Camper</strong></v-card-text
+          >
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4 white--text"
+            icon
+          >
+            <v-icon size="30px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </div>
 </template>
 
 <style scoped>
+#text {
+  margin-left: 660px;
+}
+#date {
+  margin-left: 30px;
+  font-size: medium;
+}
 </style>
 
 <script>
@@ -68,6 +112,14 @@ import Navbar from "./components/Navbar";
 export default {
   data: () => ({
     items: ["All", "Family", "Friends", "Coworkers"],
+    icons: [
+      "mdi-facebook",
+      "mdi-twitter",
+      "mdi-linkedin",
+      "mdi-instagram",
+      "mdi-pinterest",
+      "mdi-youtube",
+    ],
   }),
   name: "app",
   components: {
