@@ -33,12 +33,12 @@
       <v-col class="d-flex child-flex" cols="12" sm="12"> 
         <v-card>
         <v-img
-          align-center
+          
           src="./assets/camper_gif.gif"
           aspect-ratio="2"
           class="grey lighten-2">
 
-          <div>
+          <div id="div1">
             <span class="gifspan">
               11. Sayı: Kıbrıs<br>
             </span>
@@ -50,6 +50,7 @@
             <v-btn
               depressed
               elevation="2"
+              floating
               id="btnkampanya"
             >Kampanyaya Göz Atın</v-btn>
           </div>

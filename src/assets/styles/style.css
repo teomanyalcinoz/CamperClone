@@ -9,11 +9,7 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-#btnkampanya {
-    font-size: medium;
-}
-
-#card2 {
-    background-color: violet;
-    text-align: center;
+#div1 {
+    align-items: baseline;
+    vertical-align: 50%;
 }
