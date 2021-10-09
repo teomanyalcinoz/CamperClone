@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="maindiv">
     <v-card color="grey lighten-4" flat height="100px" tile>
       <v-toolbar scroll-toolbar-off-screen tile>
         <img src="./assets/camper.png" height="30" />
@@ -28,13 +28,48 @@
     </v-card>
 
     <v-row>
+      
+
+      <v-col class="d-flex child-flex" cols="12" sm="12"> 
+        <v-card>
+        <v-img
+          align-center
+          src="./assets/camper_gif.gif"
+          aspect-ratio="2"
+          class="grey lighten-2">
+
+          <div>
+            <span class="gifspan">
+              11. Sayı: Kıbrıs<br>
+            </span>
+
+            <span class="gifspan">
+              The Walking Society<br>
+            </span>
+
+            <v-btn
+              depressed
+              elevation="2"
+              id="btnkampanya"
+            >Kampanyaya Göz Atın</v-btn>
+          </div>
+          
+
+        
+
+        </v-img>
+        </v-card>
+      </v-col>
+      
       <v-col class="d-flex child-flex" sm="12" cols="12">
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/22fa517d-a949-4119-a210-cbb08370536a/T93_Peu-Stedium_2000x1125_desktop.avif={}`"
           aspect-ratio="1"
           class="grey lighten-2"
+
         ></v-img>
       </v-col>
+      
       <v-col class="d-flex child-flex" cols="6">
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/2429b0c7-0187-4d37-b5e4-ef9d3293b1ae/T93-Gender-Walden-Women-desktop.avif={}`"
@@ -97,7 +132,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped src="@/assets/styles/style.css">
 #text {
   margin-left: 660px;
 }
@@ -105,6 +140,8 @@
   margin-left: 30px;
   font-size: medium;
 }
+
+
 </style>
 
 <script>
@@ -127,5 +164,6 @@ export default {
   },
 };
 </script>
+
 
 
