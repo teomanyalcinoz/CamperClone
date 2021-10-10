@@ -36,7 +36,7 @@
           aspect-ratio="2"
           class="images">
          
-          <div class="itemsdiv">
+          
             <span class="lilspan">
               11. Sayı: Kıbrıs<br>
             </span>
@@ -52,7 +52,7 @@
               class="butonlar"
               id="btn1"
             >Kampanyaya Göz Atın</v-btn>
-          </div>
+          
         </v-img>
         </v-card>
       </v-col>
