@@ -1,3 +1,23 @@
+#text {
+    padding-left: 650px;
+}
+
+#maindiv {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#date {
+    margin-left: 30px;
+    font-size: medium;
+}
+
+.lilspan {
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    font-size: 30px;
+}
+
 .gifspan {
     text-align: center;
     vertical-align: center;
@@ -5,11 +25,32 @@
     font-size: 50px;
 }
 
-#maindiv {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.images {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    object-position: center;
 }
 
-#div1 {
-    align-items: baseline;
-    vertical-align: 50%;
+.butonlar {
+    text-transform: none;
+    position: relative;
+}
+
+.itemsdiv {
+    margin: auto;
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover,
+#btn5:hover {
+    background-color: black;
+    color: white;
+}
+
+#btn1,
+#btn2 {
+    margin-top: 20px;
 }

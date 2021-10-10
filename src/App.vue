@@ -28,18 +28,16 @@
     </v-card>
 
     <v-row>
-      
 
       <v-col class="d-flex child-flex" cols="12" sm="12"> 
         <v-card>
         <v-img
-          
           src="./assets/camper_gif.gif"
           aspect-ratio="2"
-          class="grey lighten-2">
-
-          <div id="div1">
-            <span class="gifspan">
+          class="images">
+         
+          <div class="itemsdiv">
+            <span class="lilspan">
               11. Sayı: Kıbrıs<br>
             </span>
 
@@ -51,47 +49,88 @@
               depressed
               elevation="2"
               floating
-              id="btnkampanya"
+              class="butonlar"
+              id="btn1"
             >Kampanyaya Göz Atın</v-btn>
           </div>
-          
-
-        
-
         </v-img>
         </v-card>
       </v-col>
       
       <v-col class="d-flex child-flex" sm="12" cols="12">
+        <v-card>
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/22fa517d-a949-4119-a210-cbb08370536a/T93_Peu-Stedium_2000x1125_desktop.avif={}`"
-          aspect-ratio="1"
-          class="grey lighten-2"
+          aspect-ratio="2"
+          class="images">
 
-        ></v-img>
+          <div class="itemsdiv">
+            <span class="gifspan">
+              Peu Stadium<br>
+            </span>
+            <span class="lilspan">
+              Koleksiyonu Keşfet<br>
+            </span>
+            <v-btn
+              depressed
+              elevation="2"
+              floating
+              class="butonlar"
+              id="btn2"
+            >Daha Fazlası</v-btn>
+          </div>
+        </v-img>
+        </v-card>
       </v-col>
       
       <v-col class="d-flex child-flex" cols="6">
+        <v-card>
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/2429b0c7-0187-4d37-b5e4-ef9d3293b1ae/T93-Gender-Walden-Women-desktop.avif={}`"
           aspect-ratio="1"
-          class="grey lighten-2"
-        ></v-img>
+          class="images"
+        >
+        <v-btn
+              depressed
+              elevation="2"
+              floating
+              class="butonlar"
+              id="btn3"
+            >Kadın</v-btn>
+        </v-img>
+        </v-card>
       </v-col>
+
       <v-col class="d-flex child-flex" cols="6">
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/7cf1e10a-0c2f-4505-9835-c52f97182916/T93-Gender-Walden-Men-desktop.avif={}`"
           aspect-ratio="1"
-          class="grey lighten-2"
-        ></v-img>
+          class="images">
+          <v-btn
+              depressed
+              elevation="2"
+              floating
+              class="butonlar"
+              id="btn4"
+            >Erkek</v-btn>
+        </v-img>
       </v-col>
+
       <v-col class="d-flex child-flex" cols="12">
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/c565ea73-9386-4b44-bd51-8389176cde27/T93_Store-locator-Dist-desktop.avif={}`"
-          aspect-ratio="1"
-          class="grey lighten-2"
-        ></v-img>
+          aspect-ratio="2"
+         class="images">
+         <v-btn
+              depressed
+              elevation="2"
+              floating
+              class="butonlar"
+              id="btn5"
+            >En Yakın Mağazayı Bul</v-btn>
+        </v-img>
       </v-col>
+
     </v-row>
     <v-footer padless>
       <v-card flat tile class="text-center">
@@ -134,13 +173,7 @@
 </template>
 
 <style scoped src="@/assets/styles/style.css">
-#text {
-  margin-left: 660px;
-}
-#date {
-  margin-left: 30px;
-  font-size: medium;
-}
+
 
 
 </style>
