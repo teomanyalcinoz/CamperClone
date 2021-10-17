@@ -30,32 +30,14 @@
     <v-row>
       <v-col class="d-flex child-flex" cols="12" sm="12">
         <v-card>
-          <v-img
-            src="https://www.camper.com/cms/api/assets/tiers-banners-homes/2567a1e8-f454-4813-8004-31475bb67315/T93-MSS-noproduct-Desktop.avif"
-            aspect-ratio="2"
-            class="images"
-          >
-            <v-text class="sez"> Sezon Ortası İndirimi </v-text>
-            <v-spacer></v-spacer>
-            <v-text class="gifspan">%30'a Varan İndirim<br /> </v-text>
-            <v-btn id="btnKadın" depressed> Kadın </v-btn>
-            <v-btn id="btnErkek" depressed> Erkek </v-btn>
-          </v-img>
-        </v-card>
-      </v-col>
-
-      <v-col class="d-flex child-flex" cols="12" sm="12">
-        <v-card>
           <v-img src="./assets/camper_gif.gif" aspect-ratio="2" class="images">
-            <div class="itemsdiv">
-              <span class="lilspan"> 11. Sayı: Kıbrıs<br /> </span>
+            <v-text class="lilspan"> 11. Sayı: Kıbrıs </v-text>
+            <v-spacer></v-spacer>
+            <v-text class="gifspan"> The Walking Society<br /> </v-text>
 
-              <span class="gifspan"> The Walking Society<br /> </span>
-
-              <v-btn depressed elevation="2" floating class="butonlar" id="btn1"
-                >Kampanyaya Göz Atın</v-btn
-              >
-            </div>
+            <v-btn depressed elevation="2" floating class="butonlar" id="btn1"
+              >Kampanyaya Göz Atın</v-btn
+            >
           </v-img>
         </v-card>
       </v-col>
@@ -67,13 +49,12 @@
             aspect-ratio="2"
             class="images"
           >
-            <div class="itemsdiv">
-              <span class="gifspan"> Peu Stadium<br /> </span>
-              <span class="lilspan"> Koleksiyonu Keşfet<br /> </span>
-              <v-btn depressed elevation="2" floating class="butonlar" id="btn2"
-                >Daha Fazlası</v-btn
-              >
-            </div>
+            <v-text class="peuspan"> PeuStadium </v-text>
+            <v-spacer></v-spacer>
+            <v-text class="colspan"> Koleksiyonu Keşfet<br /> </v-text>
+            <v-btn depressed elevation="2" floating class="butonlar" id="btn2"
+              >Daha Fazlası</v-btn
+            >
           </v-img>
         </v-card>
       </v-col>
