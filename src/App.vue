@@ -28,76 +28,67 @@
     </v-card>
 
     <v-row>
-
-      <v-col class="d-flex child-flex" cols="12" sm="12"> 
+      <v-col class="d-flex child-flex" cols="12" sm="12">
         <v-card>
-        <v-img
-          src="./assets/camper_gif.gif"
-          aspect-ratio="2"
-          class="images">
-         
-          <div class="itemsdiv">
-            <span class="lilspan">
-              11. Sayı: Kıbrıs<br>
-            </span>
-
-            <span class="gifspan">
-              The Walking Society<br>
-            </span>
-
-            <v-btn
-              depressed
-              elevation="2"
-              floating
-              class="butonlar"
-              id="btn1"
-            >Kampanyaya Göz Atın</v-btn>
-          </div>
-        </v-img>
+          <v-img
+            src="https://www.camper.com/cms/api/assets/tiers-banners-homes/2567a1e8-f454-4813-8004-31475bb67315/T93-MSS-noproduct-Desktop.avif"
+            aspect-ratio="2"
+            class="images"
+          >
+            <v-text class="sez"> Sezon Ortası İndirimi </v-text>
+            <v-spacer></v-spacer>
+            <v-text class="gifspan">%30'a Varan İndirim<br /> </v-text>
+            <v-btn id="btnKadın" depressed> Kadın </v-btn>
+            <v-btn id="btnErkek" depressed> Erkek </v-btn>
+          </v-img>
         </v-card>
       </v-col>
-      
+
+      <v-col class="d-flex child-flex" cols="12" sm="12">
+        <v-card>
+          <v-img src="./assets/camper_gif.gif" aspect-ratio="2" class="images">
+            <div class="itemsdiv">
+              <span class="lilspan"> 11. Sayı: Kıbrıs<br /> </span>
+
+              <span class="gifspan"> The Walking Society<br /> </span>
+
+              <v-btn depressed elevation="2" floating class="butonlar" id="btn1"
+                >Kampanyaya Göz Atın</v-btn
+              >
+            </div>
+          </v-img>
+        </v-card>
+      </v-col>
+
       <v-col class="d-flex child-flex" sm="12" cols="12">
         <v-card>
-        <v-img
-          :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/22fa517d-a949-4119-a210-cbb08370536a/T93_Peu-Stedium_2000x1125_desktop.avif={}`"
-          aspect-ratio="2"
-          class="images">
-
-          <div class="itemsdiv">
-            <span class="gifspan">
-              Peu Stadium<br>
-            </span>
-            <span class="lilspan">
-              Koleksiyonu Keşfet<br>
-            </span>
-            <v-btn
-              depressed
-              elevation="2"
-              floating
-              class="butonlar"
-              id="btn2"
-            >Daha Fazlası</v-btn>
-          </div>
-        </v-img>
+          <v-img
+            :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/22fa517d-a949-4119-a210-cbb08370536a/T93_Peu-Stedium_2000x1125_desktop.avif={}`"
+            aspect-ratio="2"
+            class="images"
+          >
+            <div class="itemsdiv">
+              <span class="gifspan"> Peu Stadium<br /> </span>
+              <span class="lilspan"> Koleksiyonu Keşfet<br /> </span>
+              <v-btn depressed elevation="2" floating class="butonlar" id="btn2"
+                >Daha Fazlası</v-btn
+              >
+            </div>
+          </v-img>
         </v-card>
       </v-col>
-      
+
       <v-col class="d-flex child-flex" cols="6">
         <v-card>
-        <v-img
-          :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/2429b0c7-0187-4d37-b5e4-ef9d3293b1ae/T93-Gender-Walden-Women-desktop.avif={}`"
-          aspect-ratio="1"
-          class="images"
-        >
-        <v-btn
-              depressed
-              elevation="2"
-              floating
-              class="butonlar"
-              id="btn3"
-            >Kadın</v-btn>
-        </v-img>
+          <v-img
+            :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/2429b0c7-0187-4d37-b5e4-ef9d3293b1ae/T93-Gender-Walden-Women-desktop.avif={}`"
+            aspect-ratio="1"
+            class="images"
+          >
+            <v-btn depressed elevation="2" floating class="butonlar" id="btn3"
+              >Kadın</v-btn
+            >
+          </v-img>
         </v-card>
       </v-col>
 
@@ -105,14 +96,11 @@
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/7cf1e10a-0c2f-4505-9835-c52f97182916/T93-Gender-Walden-Men-desktop.avif={}`"
           aspect-ratio="1"
-          class="images">
-          <v-btn
-              depressed
-              elevation="2"
-              floating
-              class="butonlar"
-              id="btn4"
-            >Erkek</v-btn>
+          class="images"
+        >
+          <v-btn depressed elevation="2" floating class="butonlar" id="btn4"
+            >Erkek</v-btn
+          >
         </v-img>
       </v-col>
 
@@ -120,66 +108,24 @@
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/c565ea73-9386-4b44-bd51-8389176cde27/T93_Store-locator-Dist-desktop.avif={}`"
           aspect-ratio="2"
-         class="images">
-         <v-btn
-              depressed
-              elevation="2"
-              floating
-              class="butonlar"
-              id="btn5"
-            >En Yakın Mağazayı Bul</v-btn>
+          class="images"
+        >
+          <v-btn depressed elevation="2" floating class="butonlar" id="btn5"
+            >En Yakın Mağazayı Bul</v-btn
+          >
         </v-img>
       </v-col>
-
     </v-row>
-    <v-footer padless>
-      <v-card flat tile class="text-center">
-        <v-card-text class="white--text pt-0">
-          Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin bir parçası olmak
-          size özel promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve
-          %10 İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-text id="text">
-          <v-card-text id="date"
-            >{{ new Date().getFullYear() }} —
-            <strong>Camper</strong></v-card-text
-          >
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4 white--text"
-            icon
-          >
-            <v-icon size="30px">
-              {{ icon }}
-            </v-icon>
-          </v-btn>
-        </v-card-text>
-      </v-card>
-    </v-footer>
+    <Footer></Footer>
   </div>
 </template>
 
 <style scoped src="@/assets/styles/style.css">
-
-
-
 </style>
 
 <script>
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 export default {
   data: () => ({
     items: ["All", "Family", "Friends", "Coworkers"],
@@ -195,6 +141,7 @@ export default {
   name: "app",
   components: {
     Navbar,
+    Footer,
   },
 };
 </script>

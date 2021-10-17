@@ -12,18 +12,36 @@
 }
 
 .lilspan {
-    text-align: center;
-    vertical-align: center;
+
     color: white;
     font-size: 30px;
+    margin-right: 550px;
+}
+.peuspan {
+
+    color: white;
+    font-size: 70px;
+    margin-right:600px;
 }
 
-.gifspan {
-    text-align: center;
-    vertical-align: center;
+.sez{
     color: white;
     font-size: 50px;
+    margin-right: 500px;
 }
+.gifspan {
+
+    color: white;
+    font-size: 70px;
+    margin-right: 850px;
+}
+.colspan {
+
+    color: white;
+    font-size: 30px;
+    margin-right: 600px;
+}
+
 
 .images {
     text-align: center;
@@ -50,7 +68,28 @@
     color: white;
 }
 
-#btn1,
+#btn1{
+    margin-top: 20px;
+    margin-right: 520px;
+}
 #btn2 {
     margin-top: 20px;
+    margin-right: 600px;
+}
+#btn3{
+    margin-right: 350px;
+}
+#btn4{
+    margin-right: 300px;
+}
+#btn5{
+    margin-right:650px;
+}
+#btnKadın{
+    margin-right: 50px;
+    width: 150px;
+}
+#btnErkek{
+    margin-right: 500px;
+    width: 150px;
 }
