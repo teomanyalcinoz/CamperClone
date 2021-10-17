@@ -1,0 +1,83 @@
+#text {
+    padding-left: 650px;
+}
+
+#maindiv {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#date {
+    margin-left: 30px;
+    font-size: medium;
+}
+
+.lilspan {
+
+    color: white;
+    font-size: 30px;
+    margin-right: 550px;
+}
+.peuspan {
+
+    color: white;
+    font-size: 70px;
+    margin-right:600px;
+}
+
+
+.gifspan {
+
+    color: white;
+    font-size: 70px;
+    margin-right: 850px;
+}
+.colspan {
+
+    color: white;
+    font-size: 30px;
+    margin-right: 600px;
+}
+
+
+.images {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    object-position: center;
+}
+
+.butonlar {
+    text-transform: none;
+    position: relative;
+}
+
+.itemsdiv {
+    margin: auto;
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover,
+#btn5:hover {
+    background-color: black;
+    color: white;
+}
+
+#btn1{
+    margin-top: 20px;
+    margin-right: 520px;
+}
+#btn2 {
+    margin-top: 20px;
+    margin-right: 600px;
+}
+#btn3{
+    margin-right: 350px;
+}
+#btn4{
+    margin-right: 300px;
+}
+#btn5{
+    margin-right:650px;
+}
