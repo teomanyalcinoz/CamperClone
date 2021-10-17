@@ -9,7 +9,7 @@
           promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
           İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
           promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
+          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özelfooter footer
           promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
           İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
           promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
