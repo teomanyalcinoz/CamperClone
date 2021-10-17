@@ -28,6 +28,22 @@
     </v-card>
 
     <v-row>
+       <v-col class="d-flex child-flex" cols="12" sm="12">
+        <v-card>
+          <v-img src="https://www.camper.com/cms/api/assets/tiers-banners-homes/2567a1e8-f454-4813-8004-31475bb67315/T93-MSS-noproduct-Desktop.avif" aspect-ratio="2" class="images">
+            <v-text class="sez"> Sezon Ortası  İndirimi </v-text>
+            <v-spacer></v-spacer>
+            <v-text class="gifspan">%30'a Varan İndirim<br /> </v-text>
+    <v-btn id="btnKadın" depressed>
+      Kadın
+    </v-btn>
+    <v-btn id="btnErkek" depressed>
+      Erkek
+    </v-btn>
+          </v-img>
+        </v-card>
+      </v-col>
+      
       <v-col class="d-flex child-flex" cols="12" sm="12">
         <v-card>
           <v-img src="./assets/camper_gif.gif" aspect-ratio="2" class="images">
@@ -97,43 +113,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <v-footer padless>
-      <v-card flat tile class="text-center">
-        <v-card-text class="white--text pt-0">
-          Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin bir parçası olmak
-          size özel promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve
-          %10 İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-          İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-          promosyonlara ve hikayelere erişim
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-text id="text">
-          <v-card-text id="date"
-            >{{ new Date().getFullYear() }} —
-            <strong>Camper</strong></v-card-text
-          >
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4 white--text"
-            icon
-          >
-            <v-icon size="30px">
-              {{ icon }}
-            </v-icon>
-          </v-btn>
-        </v-card-text>
-      </v-card>
-    </v-footer>
+      <Footer></Footer>
   </div>
 </template>
 
@@ -142,6 +122,7 @@
 
 <script>
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 export default {
   data: () => ({
     items: ["All", "Family", "Friends", "Coworkers"],
@@ -157,6 +138,7 @@ export default {
   name: "app",
   components: {
     Navbar,
+    Footer
   },
 };
 </script>
