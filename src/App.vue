@@ -39,7 +39,6 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Main from "./components/MainPage.vue";
-
 export default {
   data: () => ({
     icons: [
