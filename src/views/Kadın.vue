@@ -1,16 +1,20 @@
 <template>
   <div class="kadın">
     <h1>KADIN ÜRÜNLERİ</h1>
-    <p>DENEME</p>  
-    <p>DENEME</p> 
-    <p>DENEME</p>   
-    <p>DENEME</p> 
-    <p>DENEME</p> 
+    <v-button>DENEMEE</v-button>
+    <Header></Header>
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header";
 export default {
-  name: 'kadın'
-}
+  name: "kadın",
+  components: {
+    Navbar,
+    Footer,
+    Main,
+    Header,
+  },
+};
 </script>

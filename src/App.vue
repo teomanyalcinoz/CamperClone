@@ -1,7 +1,7 @@
 <template>
   <div id="maindiv">
     <Header></Header>
- 
+
     <Footer></Footer>
   </div>
 </template>
@@ -13,8 +13,7 @@
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Main from "./views/MainPage.vue";
-
+import Main from "./components/MainPage.vue";
 export default {
   data: () => ({
     icons: [
