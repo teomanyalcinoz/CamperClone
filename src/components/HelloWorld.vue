@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <v-container> </v-container>
 </template>
@@ -60,3 +61,7 @@ export default {
   }),
 };
 </script>
+=======
+<template></template>
+
+>>>>>>> 334f534884dfe323f436d9adfb77f8f73ebee3a6
