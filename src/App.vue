@@ -1,7 +1,9 @@
 <template>
   <div id="maindiv">
     <Header></Header>
- 
+    <v-content>
+      <router-view></router-view>
+    </v-content>
     <Footer></Footer>
   </div>
 </template>
@@ -31,7 +33,7 @@ export default {
     Navbar,
     Footer,
     Main,
-    Header
+    Header,
   },
 };
 </script>
