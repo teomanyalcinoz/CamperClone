@@ -12,8 +12,7 @@
         erişim sağlayacaktır.Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin
         bir parçası olmak size özel promosyonlara ve hikayelere erişim
         sağlayacaktır.Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin bir
-        parçası olmak size özel promosyonlara ve hikayelere erişim TEOMAN
-        YALCINOZ
+        parçası olmak size özel promosyonlara ve hikayelere erişim BULUT YELKEN YENİİ
       </v-card-text>
 
       <v-divider></v-divider>
