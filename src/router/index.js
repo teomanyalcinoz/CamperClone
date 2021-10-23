@@ -29,7 +29,6 @@ const routes = [
     name: "Kadın",
     component: () => import('@/views/Kadın.vue'),
   },
-
   {
     path: "/cocuk",
     name: "Cocuk",
