@@ -1,6 +1,6 @@
 <template>
   <v-card color="grey lighten-4" flat height="200px" tile>
-    <v-toolbar>
+    <v-toolbar class="fixedtoolbar">
       <router-link to="/">
         <v-img
           src="@/assets/camper.png"
@@ -17,9 +17,20 @@
         <v-btn flat to="/sezon">Sezon Ortasi İndirimi</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat to="/magaza">Mağaza Bul</v-btn>
-        <v-btn flat>Hesabım</v-btn>
+      <v-toolbar-items
+        ><v-btn flat to="/magaza">Mağaza Bul</v-btn>
+        <v-btn 
+        id="hesabimbtn" 
+        @mouseover="expand=true"
+        @mouseleave="expand=false"
+        flat
+        >Hesabım</v-btn>
+        <Hesabim 
+         v-show="expand"
+        ></Hesabim>
+        
+        
+
         <v-btn icon>
           <v-icon>mdi-basket</v-icon>
         </v-btn>
@@ -29,11 +40,28 @@
   </v-card>
 </template>
 
+<style scoped>
+.fixedtoolbar {
+  position: sticky;
+}
+
+#hesabimbtn {
+  padding-bottom: 250px;
+}
+</style>
+
 <script>
+import Hesabim from "./Hesabim.vue";
+
 export default {
   name: "header",
+  components: {
+    Hesabim
+  },
   data() {
-    return {};
+    return {
+      expand: false,
+    };
   },
 };
 </script>

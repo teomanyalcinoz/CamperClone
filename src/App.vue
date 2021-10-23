@@ -9,6 +9,9 @@
 </template>
 
 <style>
+#maindiv {
+  font-family: Segoe UI,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji;
+}
 </style>
 
 <script>
