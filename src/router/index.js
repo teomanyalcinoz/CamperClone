@@ -16,19 +16,30 @@ const routes = [
   {
     path: "/erkek",
     name: "Erkek",
-    component: Erkek
+    component: () => import('@/views/Erkek.vue'),
+  },
+  {
+    path: "/magaza",
+    name: "Magaza",
+    component: () => import('@/views/Magaza.vue'),
+
   },
   {
     path: "/kadın",
     name: "Kadın",
-    component: Kadın
+    component: () => import('@/views/Kadın.vue'),
   },
-  
+
   {
     path: "/cocuk",
     name: "Cocuk",
-    component: Cocuk
-  },  
+    component: () => import('@/views/Cocuk.vue'),
+  },
+  {
+    path: "/sezon",
+    name: "Sezon",
+    component: () => import('@/views/Sezon.vue'),
+  },
 
 ]
 

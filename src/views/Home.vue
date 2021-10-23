@@ -10,9 +10,15 @@
           <v-text class="sez"> Sezon Ortası İndirimi </v-text>
           <v-spacer></v-spacer>
           <v-text class="gifspan">%30'a Varan İndirim<br /> </v-text>
-          <v-btn id="btnKadın" depressed> Kadın </v-btn>
-          <v-btn id="btnErkek" depressed> Erkek </v-btn>
+          <v-btn id="btnKadın" depressed to="/kadın"> Kadın </v-btn>
+          <v-btn id="btnErkek" depressed to="/erkek"> Erkek </v-btn>
         </v-img>
+      </v-card>
+    </v-col>
+
+    <v-col class="d-flex child-flex" cols="12" sm="12">
+      <v-card>
+        <Carousel></Carousel>
       </v-card>
     </v-col>
 
@@ -53,7 +59,13 @@
           aspect-ratio="1"
           class="images"
         >
-          <v-btn depressed elevation="2" floating class="butonlar" id="btn3"
+          <v-btn
+            depressed
+            elevation="2"
+            floating
+            class="butonlar"
+            id="btn3"
+            to="/kadın"
             >Kadın</v-btn
           >
         </v-img>
@@ -66,7 +78,13 @@
         aspect-ratio="1"
         class="images"
       >
-        <v-btn depressed elevation="2" floating class="butonlar" id="btn4"
+        <v-btn
+          depressed
+          elevation="2"
+          floating
+          class="butonlar"
+          id="btn4"
+          to="/erkek"
           >Erkek</v-btn
         >
       </v-img>
@@ -78,7 +96,13 @@
         aspect-ratio="2"
         class="images"
       >
-        <v-btn depressed elevation="2" floating class="butonlar" id="btn5"
+        <v-btn
+          depressed
+          elevation="2"
+          floating
+          class="butonlar"
+          id="btn5"
+          to="/magaza"
           >En Yakın Mağazayı Bul</v-btn
         >
       </v-img>
@@ -185,8 +209,12 @@
 </style>
 
 <script>
+import Carousel from "../components/CarouselHome.vue";
 export default {
   name: "main",
+  components: {
+    Carousel,
+  },
   data() {
     return {};
   },
