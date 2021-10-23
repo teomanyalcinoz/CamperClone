@@ -4,32 +4,32 @@
       <v-card-text class="white--text pt-0">
         <div id="ilkd">
           <div>
-            <div>Kaydolun ve %10 indirim kazanın</div>
+            <div id="kayıtBaslık">Kaydolun ve %10 indirim kazanın</div>
             <div>
               Camper Ailesi'nin bir parçası olmak size özel promosyonlara ve
               <br />
               hikayelere erişim sağlayacaktır.
             </div>
-            <v-btn outlined>ABONE OL</v-btn>
           </div>
         </div>
+      </v-card-text>
+      <Abone />
+      <v-card-text>
         <v-divider></v-divider>
         <div id="yand">
           <div>
             <v-btn id="phone" icon>
               <v-icon>mdi-phone</v-icon>
             </v-btn>
-            <div>Müşteri Hizmetleri</div>
+            <div id="kayıtBaslık">Müşteri Hizmetleri</div>
             <div>
               Ayrıca, iletişim formunu doldurarak da bizimle iletişime <br />
               geçebilirsiniz. Çalışma saatlerimiz her gün 09:00 - 19:00. Resmi
-              <br />
               tatiller hariç. Bizi arayın: 0850 777 27 37
             </div>
           </div>
         </div>
       </v-card-text>
-
       <v-divider></v-divider>
 
       <v-card-text id="text">
@@ -56,6 +56,10 @@
 </template>
 
 <style scoped>
+#kayıtBaslık {
+  font-weight: bold;
+  font-size: 20px;
+}
 #phone {
   margin-left: 37px;
   font-size: 50px;
@@ -78,8 +82,12 @@
 </style>
 
 <script>
+import Abone from "./AboneOl.vue";
 export default {
   name: "footer",
+  components: {
+    Abone,
+  },
   data() {
     return {
       icons: [
