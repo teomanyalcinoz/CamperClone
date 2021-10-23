@@ -2,17 +2,32 @@
   <v-footer padless>
     <v-card flat tile class="text-center">
       <v-card-text class="white--text pt-0">
-        Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin bir parçası olmak size
-        özel promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10
-        İndirim Kazanın Camper Ailesi'nin bir parçası olmak size özel
-        promosyonlara ve hikayelere erişim sağlayacaktır.Kaydolun ve %10 İndirim
-        Kazanın Camper Ailesi'nin bir parçası olmak size özel promosyonlara ve
-        hikayelere erişim sağlayacaktır.Kaydolun ve %10 İndirim Kazanın Camper
-        Ailesi'nin bir parçası olmak size özel promosyonlara ve hikayelere
-        erişim sağlayacaktır.Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin
-        bir parçası olmak size özel promosyonlara ve hikayelere erişim
-        sağlayacaktır.Kaydolun ve %10 İndirim Kazanın Camper Ailesi'nin bir
-        parçası olmak size özel promosyonlara ve hikayelere erişim
+        <div id="ilkd">
+          <div>
+            <div>Kaydolun ve %10 indirim kazanın</div>
+            <div>
+              Camper Ailesi'nin bir parçası olmak size özel promosyonlara ve
+              <br />
+              hikayelere erişim sağlayacaktır.
+            </div>
+            <v-btn outlined>ABONE OL</v-btn>
+          </div>
+        </div>
+        <v-divider></v-divider>
+        <div id="yand">
+          <div>
+            <v-btn id="phone" icon>
+              <v-icon>mdi-phone</v-icon>
+            </v-btn>
+            <div>Müşteri Hizmetleri</div>
+            <div>
+              Ayrıca, iletişim formunu doldurarak da bizimle iletişime <br />
+              geçebilirsiniz. Çalışma saatlerimiz her gün 09:00 - 19:00. Resmi
+              <br />
+              tatiller hariç. Bizi arayın: 0850 777 27 37
+            </div>
+          </div>
+        </div>
       </v-card-text>
 
       <v-divider></v-divider>
@@ -41,6 +56,18 @@
 </template>
 
 <style scoped>
+#phone {
+  margin-left: 37px;
+  font-size: 50px;
+}
+#ilkd {
+  margin-top: 0px;
+  margin-left: 40px;
+}
+#yand {
+  margin-left: 1140px;
+  margin-top: 0px;
+}
 #date {
   margin-left: 680px;
   font-size: large;
