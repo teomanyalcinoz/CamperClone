@@ -18,19 +18,20 @@
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items
-        ><v-btn flat to="/magaza">Mağaza Bul</v-btn>
+        ><v-btn flat to="/magaza" id="magazabtn">Mağaza Bul</v-btn>
         <v-btn 
         id="hesabimbtn" 
         @mouseover="expand=true"
-        @mouseleave="expand=false"
         flat
         >Hesabım</v-btn>
-        <Hesabim 
-         v-show="expand"
-        ></Hesabim>
-        
-        
 
+        <div @mouseleave="expand=false">
+        <Hesabim
+          
+          v-show="expand" id="hesabimexpand"
+         
+        ></Hesabim>
+        </div>
         <v-btn icon>
           <v-icon>mdi-basket</v-icon>
         </v-btn>
@@ -43,10 +44,27 @@
 <style scoped>
 .fixedtoolbar {
   position: sticky;
+  
+}
+#magazabtn {
+  position: fixed;
+    bottom: 0px;
+    right: 179px;
+    
 }
 
 #hesabimbtn {
-  padding-bottom: 250px;
+    position: fixed;
+    bottom: 0px;
+    right: 75px;
+}
+
+#hesabimexpand {
+    margin-top: 65px;
+    justify-self: right;
+    margin-right: -65px;
+    background-color: cornflowerblue;
+       
 }
 </style>
 
@@ -61,6 +79,8 @@ export default {
   data() {
     return {
       expand: false,
+      hesabimm: document.getElementById('hesabimexpand'),
+      
     };
   },
 };

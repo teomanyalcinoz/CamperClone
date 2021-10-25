@@ -1,11 +1,12 @@
 <template>
-  <v-carousel height="500" cycle>
+  <v-carousel height="650" cycle>
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
+      
     >
       <div id="karstDiv">
         <v-text id="karst">KARST</v-text>
