@@ -18,7 +18,7 @@
                 <v-card-text>
                     Siparişinizi görmek için
                 </v-card-text>
-                <p><a href="https://www.w3schools.com/" id="linksiparis">Siparişleriniz</a></p>
+                <p><a href="https://www.w3schools.com/" id="linksiparis" class="boldclass">Siparişleriniz</a></p>
             </div>
         </v-card>
         
@@ -36,7 +36,7 @@
 
     #expanddiv {
         padding-left: 16px;
-        padding-bottom: 16px;
+        padding-bottom: 22px;
 
     }
 
@@ -71,16 +71,9 @@
         background: black;
         color: white;
         text-transform: none;
-        margin-left: 100px;
+        margin-left: 70px;
         margin-bottom: 10px;
-        padding-inline: 50px;
-    }
-
-   
-
-    
-
-    
+    }    
 </style>
 
 <script>
