@@ -4,7 +4,7 @@
       <v-card>
         <v-img
           src="https://www.camper.com/cms/api/assets/tiers-banners-homes/2567a1e8-f454-4813-8004-31475bb67315/T93-MSS-noproduct-Desktop.avif"
-          aspect-ratio="2"
+          aspect-ratio="1"
           class="images"
         >
           <v-text class="sez"> Sezon Ortası İndirimi </v-text>

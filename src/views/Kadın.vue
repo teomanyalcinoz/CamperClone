@@ -1,8 +1,8 @@
 <template>
   <div class="kadın">
-    <Filt />
     <h1 id="baslık">Kadın Ayakkabıları</h1>
-    <v-row>
+    <Filt />
+    <v-row id="row">
       <v-col v-for="n in 5" :key="n" class="d-flex child-flex" cols="4">
         <v-img
           :src="`https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K201147-02${
@@ -22,7 +22,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row id="row">
       <v-col v-for="n in 5" :key="n" class="d-flex child-flex" cols="4">
         <v-img
           :src="`https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K200508-04${
@@ -49,6 +49,9 @@
 <style scoped>
 #baslık {
   margin-left: 620px;
+}
+#row {
+  z-index: 0;
 }
 </style>
 
