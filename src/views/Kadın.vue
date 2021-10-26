@@ -1,5 +1,6 @@
 <template>
   <div class="kadın">
+    <Filt />
     <h1 id="baslık">Kadın Ayakkabıları</h1>
     <v-row>
       <v-col v-for="n in 5" :key="n" class="d-flex child-flex" cols="4">
@@ -52,7 +53,11 @@
 </style>
 
 <script>
+import Filt from "../components/Filter.vue";
 export default {
+  components: {
+    Filt,
+  },
   name: "kadın",
 };
 </script>
