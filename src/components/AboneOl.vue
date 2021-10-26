@@ -10,12 +10,33 @@
     </transition>
     <transition name="slide" appear>
       <div class="modal" role="dialog" v-if="showModal">
-        <h1>Lorem Ipsum</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button @click="showModal = false" class="button">Hide Modal</button>
+        <v-container>
+          <v-row>
+            <v-col>
+              <v-img
+                max-height="600px"
+                max-width="500px"
+                src="https://www.camper.com/assets-new/newsletter-img3.avif"
+                class="ml-auto"
+              ></v-img>
+            </v-col>
+            <v-col>
+              <v-card class="pa-2" outlined tile>
+                <h1>Kaydolun ve %10 İndirim Kazanın</h1>
+                <p>
+                  Camper Ailesi'nin bir parçası olmak size özel promosyonlara ve
+                  hikayelere erişim sağlayacaktır.
+                </p>
+                <v-text-field
+                  label="E-mail adresinizi girin"
+                  outlined
+                ></v-text-field> </v-card
+            ></v-col>
+          </v-row>
+          <button id="abonBtn" @click="showModal = false" class="button">
+            Abone Ol
+          </button>
+        </v-container>
       </div>
     </transition>
   </div>
@@ -51,6 +72,9 @@ body {
   }
 }
 
+#abonBtn {
+  margin-left: 120px;
+}
 .modal-overlay {
   position: absolute;
   top: 0;
