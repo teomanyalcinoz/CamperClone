@@ -18,7 +18,7 @@
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items
-        ><v-btn flat to="/magaza" id="magazabtn">Mağaza Bul</v-btn>
+        ><v-btn flat to="/magaza" id="magazabtn" @mouseover="expand=false">Mağaza Bul</v-btn>
         <v-btn 
         id="hesabimbtn" 
         @mouseover="expand=true"
@@ -32,7 +32,12 @@
          
         ></Hesabim>
         </div>
-        <v-btn icon>
+
+        
+        
+
+        
+        <v-btn icon @mouseover="expand=false" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Camper'ınızı almak için <b> butonuna tıklayın.">
           <v-icon>mdi-basket</v-icon>
         </v-btn>
         <v-spacer> </v-spacer>
@@ -41,10 +46,13 @@
   </v-card>
 </template>
 
+
+
 <style scoped>
 .fixedtoolbar {
   position: sticky;
-  
+
+
 }
 #magazabtn {
   position: fixed;
@@ -65,25 +73,27 @@
     justify-self: right;
     margin-right: -65px;
     background-color: cornflowerblue;
-    
+    width: 280px;
        
 }
 </style>
-
+  
 <script>
 import Hesabim from "./Hesabim.vue";
 
 export default {
+  
   name: "header",
   components: {
     Hesabim
   },
+  
   data() {
     return {
       expand: false,
-      hesabimm: document.getElementById('hesabimexpand'),
-      
+    
     };
   },
 };
+
 </script>
