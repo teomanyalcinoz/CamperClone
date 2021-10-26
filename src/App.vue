@@ -1,6 +1,6 @@
 <template>
   <div id="maindiv">
-    <Header></Header>
+    <Header id="header"></Header>
     <v-content>
       <router-view></router-view>
     </v-content>
@@ -11,6 +11,10 @@
 <style>
 #maindiv {
   font-family: Segoe UI,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji;
+}
+
+#header {
+  z-index: 1;
 }
 </style>
 

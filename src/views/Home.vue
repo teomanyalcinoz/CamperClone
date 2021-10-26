@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row id="row">
     <v-col class="d-flex child-flex" cols="12" sm="12">
       <v-card>
         <v-img
@@ -111,6 +111,10 @@
 </template>
 
 <style scoped >
+#row {
+  z-index: 0;
+}
+
 #text {
   padding-left: 650px;
 }

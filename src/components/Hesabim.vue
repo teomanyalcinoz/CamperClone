@@ -14,11 +14,11 @@
                 <v-card-text id="oturumtext">
                    Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
                 </v-card-text>
-                <v-btn small elevation="5" color="black" id="btnoturum">Oturum Aç</v-btn>
+                <v-btn small elevation="4" color="black" id="btnoturum">Oturum Aç</v-btn>
                 <v-card-text>
                     Siparişinizi görmek için
                 </v-card-text>
-                <p><a href="https://www.w3schools.com/">Siparişleriniz</a></p>
+                <p><a href="https://www.w3schools.com/" id="linksiparis">Siparişleriniz</a></p>
             </div>
         </v-card>
         
@@ -29,11 +29,26 @@
 </template>
 
 <style scoped>
+    #linksiparis {
+        padding-left:16px ;
+
+    }
+
+    #expanddiv {
+        padding-left: 16px;
+        padding-bottom: 16px;
+
+    }
+
+    #linksiparis {
+        color: black;
+    }
     #oturumtext {
         padding-top: 5px;
     }
 
     #campertext {
+        font-size: 18px;
         padding-bottom: 0px;
     }
 
@@ -51,6 +66,8 @@
     }
 
     #btnoturum {
+        font-size: 16px;
+        height: 40px;
         background: black;
         color: white;
         text-transform: none;
