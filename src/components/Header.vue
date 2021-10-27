@@ -1,5 +1,5 @@
 <template>
-  <v-card color="grey lighten-4" flat height="200px" tile>
+  <v-card color="grey lighten-4" flat height="65px" tile>
     <v-toolbar class="fixedtoolbar">
       <router-link to="/">
         <v-img
@@ -14,7 +14,7 @@
         ><v-btn flat to="/kadın">Kadın</v-btn>
         <v-btn flat to="/erkek">Erkek</v-btn>
         <v-btn flat to="/cocuk">Çocuk</v-btn>
-        <v-btn flat to="/sezon">Sezon Ortasi İndirimi</v-btn>
+        <v-btn flat to="/sezon">Sezon Ortasi İNDİRİMİ</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items
@@ -51,6 +51,7 @@
 <style scoped>
 .fixedtoolbar {
   position: sticky;
+
 
 
 }
