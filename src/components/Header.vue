@@ -1,5 +1,5 @@
 <template>
-  <v-card color="grey lighten-4" flat height="200px" tile>
+  <v-card color="grey lighten-4" flat height="65px" tile>
     <v-toolbar class="fixedtoolbar">
       <router-link to="/">
         <v-img

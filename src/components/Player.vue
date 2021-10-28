@@ -43,9 +43,9 @@
   background-color: lemonchiffon;
 }
 #first {
-  background-color: brown;
+  background-color: red;
   color: white;
-  margin-left: -325px;
+  margin-left: -355px;
 }
 #second {
   background-color: lemonchiffon;
