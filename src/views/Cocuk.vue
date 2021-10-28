@@ -57,10 +57,12 @@ https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K900249-00${
 
 <script>
 import Filt from "../components/Filter.vue";
+import Player from "../components/Player.vue";
 export default {
   name: "cocuk",
   components: {
     Filt,
+    Player,
   },
 };
 </script>

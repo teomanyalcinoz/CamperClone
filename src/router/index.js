@@ -35,10 +35,11 @@ const routes = [
     component: () => import('@/views/Cocuk.vue'),
   },
   {
-    path: "/sezon",
-    name: "Sezon",
-    component: () => import('@/views/Sezon.vue'),
+    path: "/tws",
+    name: "tws",
+    component: () => import('@/views/Tws.vue'),
   },
+
 
 ]
 

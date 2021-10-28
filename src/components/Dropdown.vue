@@ -1,56 +1,76 @@
 <template>
-  <div class="menu-item" @click="isOpen = !isOpen">
-    <a href="#">
-      {{ title }}
-    </a>
-    <svg viewBox="0 0 1030 638" width="10">
-      <path
-        d="M1017 68L541 626q-11 12-26 12t-26-12L13 68Q-3 49 6 24.5T39 0h952q24 0 33 24.5t-7 43.5z"
-        fill="#FFF"
-      ></path>
-    </svg>
-    <transition name="fade" appear>
-      <div class="sub-menu" v-if="isOpen">
-        <div v-for="(item, i) in items" :key="i" class="menu-item">
-          <a :href="item.link">{{ item.title }}</a>
-        </div>
-      </div>
-    </transition>
+  <div class="dropdown">
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+      />
+    </head>
+    <button class="dropbtn">{{ btnText }}</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "dropdown",
-  props: ["title", "items"],
   data() {
     return {
-      isOpen: false,
+      btnText: "Watchlist",
     };
   },
 };
 </script>
 
-<style>
-nav .menu-item svg {
-  width: 10px;
-  margin-left: 10px;
+<style scoped>
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
 }
-nav .menu-item .sub-menu {
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
   position: absolute;
-  background-color: #222;
-  top: calc(100% + 18px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: max-content;
-  border-radius: 0px 0px 16px 16px;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
 }
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.5s ease-out;
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: white;
 }
 </style>
