@@ -1,5 +1,5 @@
-<template  height="100%" width="100%">
-  <v-carousel  cycle>
+<template width="100%">
+  <v-carousel height="750" cycle>
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -24,15 +24,21 @@
   margin-top: 200px;
   margin-left: -100px;
 }
+#karstBtn:hover{  
+  background-color: black;
+  color: white;
+}
 #karstBtn {
   margin-top: 20px;
   margin-left: -40px;
+  text-transform: none;
+  width: 220px;
 }
 #karst {
   color: white;
-  margin-left: -10px;
   font-size: 45px;
   font-weight: bold;
+  align-self: center;
 }
 #karst2 {
   color: white;
