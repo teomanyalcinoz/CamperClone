@@ -14,11 +14,7 @@
         <v-btn flat to="/kadın">Kadın</v-btn>
         <v-btn flat to="/erkek">Erkek</v-btn>
         <v-btn flat to="/cocuk">Çocuk</v-btn>
-<<<<<<< HEAD
         <v-btn flat to="/tws">TheWalkingSociety</v-btn>
-=======
-        <v-btn flat to="/sezon">Sezon Ortasi İNDİRİMİ</v-btn>
->>>>>>> 8eff1b74ab55b9f612f5cc6f117193b8843714d8
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items
@@ -52,12 +48,6 @@
 <style scoped>
 .fixedtoolbar {
   position: sticky;
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 8eff1b74ab55b9f612f5cc6f117193b8843714d8
 }
 #magazabtn {
   position: fixed;

@@ -79,7 +79,6 @@
 #divicons {
   margin-left: 650px;
 }
-
 </style>
 
 <script>

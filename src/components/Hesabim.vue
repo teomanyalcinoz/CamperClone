@@ -73,16 +73,7 @@
         text-transform: none;
         margin-left: 70px;
         margin-bottom: 10px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: black;
-        
     }    
-    #btnoturum:hover{
-        background-color: white;
-        color: black;
-
-    }
 </style>
 
 <script>

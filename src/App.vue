@@ -8,25 +8,13 @@
   </div>
 </template>
 
-
-
 <style>
-html,body {
-   width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    overflow-y: auto;
-}
-
 #maindiv {
   font-family: Segoe UI,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji;
 }
 
 #header {
   z-index: 1;
-
 }
 </style>
 

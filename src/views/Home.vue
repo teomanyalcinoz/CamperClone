@@ -1,10 +1,6 @@
 <template>
   <v-row id="row">
-<<<<<<< HEAD
     <v-col class="d-flex child-flex kolon" cols="12" sm="12">
-=======
-    <v-col class="d-flex child-flex kolonlar" id="szncol" cols="12" sm="12">
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
       <v-card>
         <v-img
           src="https://www.camper.com/cms/api/assets/tiers-banners-homes/2567a1e8-f454-4813-8004-31475bb67315/T93-MSS-noproduct-Desktop.avif"
@@ -14,43 +10,31 @@
           <v-text class="sez"> Sezon Ortası İndirimi </v-text>
           <v-spacer></v-spacer>
           <v-text class="gifspan">%30'a Varan İndirim<br /> </v-text>
-          <v-btn id="btnKadın" depressed to="/kadın" class="butonlar"> Kadın </v-btn>
-          <v-btn id="btnErkek" depressed to="/erkek" class="butonlar"> Erkek </v-btn>
+          <v-btn id="btnKadın" depressed to="/kadın"> Kadın </v-btn>
+          <v-btn id="btnErkek" depressed to="/erkek"> Erkek </v-btn>
         </v-img>
       </v-card>
     </v-col>
 
-<<<<<<< HEAD
     <v-col class="d-flex child-flex kolon" cols="12" sm="12">
-=======
-    <v-col class="d-flex child-flex kolonlar" cols="12" sm="12">
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
       <v-card>
         <Carousel></Carousel>
       </v-card>
     </v-col>
 
-<<<<<<< HEAD
     <v-col class="d-flex child-flex kolon" cols="12" sm="12">
-=======
-    <v-col class="d-flex child-flex kolonlar" cols="12" sm="12">
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
       <v-card>
         <v-img src="@/assets/camper_gif.gif" aspect-ratio="2" class="images">
           <v-text class="sez"> 11. Sayı Kıbrıs </v-text>
           <v-spacer></v-spacer>
           <v-text class="gifspan">The Walking Society<br /> </v-text>
           <v-spacer></v-spacer>
-          <v-btn id="kampanya" depressed class="butonlar"> Kampanyaya Göz Atın </v-btn>
+          <v-btn id="kampanya" depressed> Kampanyaya Göz Atın </v-btn>
         </v-img>
       </v-card>
     </v-col>
 
-<<<<<<< HEAD
     <v-col class="d-flex child-flex kolon" sm="12" cols="12">
-=======
-    <v-col class="d-flex child-flex kolonlar" sm="12" cols="12">
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
       <v-card>
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/22fa517d-a949-4119-a210-cbb08370536a/T93_Peu-Stedium_2000x1125_desktop.avif={}`"
@@ -68,11 +52,7 @@
       </v-card>
     </v-col>
 
-<<<<<<< HEAD
     <v-col class="d-flex child-flex kolon" cols="6">
-=======
-    <v-col class="d-flex child-flex kolonlar" cols="6">
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
       <v-card>
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/2429b0c7-0187-4d37-b5e4-ef9d3293b1ae/T93-Gender-Walden-Women-desktop.avif={}`"
@@ -92,11 +72,7 @@
       </v-card>
     </v-col>
 
-<<<<<<< HEAD
     <v-col class="d-flex child-flex kolon" cols="6">
-=======
-    <v-col class="d-flex child-flex kolonlar" cols="6">
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
       <v-img
         :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/7cf1e10a-0c2f-4505-9835-c52f97182916/T93-Gender-Walden-Men-desktop.avif={}`"
         aspect-ratio="1"
@@ -114,11 +90,7 @@
       </v-img>
     </v-col>
 
-<<<<<<< HEAD
     <v-col class="d-flex child-flex kolon" cols="12">
-=======
-    <v-col class="d-flex child-flex kolonlar" cols="12">
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
       <v-img
         :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/c565ea73-9386-4b44-bd51-8389176cde27/T93_Store-locator-Dist-desktop.avif={}`"
         aspect-ratio="2"
@@ -139,17 +111,9 @@
 </template>
 
 <style scoped >
-<<<<<<< HEAD
 .kolon {
   padding: 0px;
 }
-=======
-
-.kolonlar {
-  padding: 0px;
-}
-
->>>>>>> f23126779b352581fb6746c49e94c841c7902bc6
 #row {
   z-index: 0;
 }
@@ -211,7 +175,11 @@
   margin: auto;
 }
 
-.butonlar:hover {
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover,
+#btn5:hover {
   background-color: black;
   color: white;
 }
