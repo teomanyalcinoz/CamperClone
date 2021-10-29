@@ -13,9 +13,9 @@
         <v-text id="text">10 Ürün |</v-text>
       </v-col>
 
-      <v-app id="app"
+      <v-app
         ><v-col class="d-flex" cols="12" sm="12">
-          <v-select id="app" :items="items" label="Sıralama"></v-select> </v-col
+          <v-select :items="items" label="Sıralama"></v-select> </v-col
       ></v-app>
     </v-layout>
   </v-container>
@@ -24,9 +24,6 @@
 
 
 <style scoped>
-#app {
-  z-index: 2;
-}
 #filtre {
   margin-left: -160px;
   margin-top: 20px;

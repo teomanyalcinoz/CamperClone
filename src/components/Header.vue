@@ -53,9 +53,6 @@
           <Hesabim v-show="expand" id="hesabimexpand"></Hesabim>
         </div>
 
-<<<<<<< HEAD
-        <v-btn icon @mouseover="expand = false">
-=======
         <v-btn
           icon
           @mouseover="expand = false"
@@ -64,10 +61,8 @@
           data-placement="bottom"
           title="Camper'ınızı almak için Sepete Ekle butonuna tıklayın."
         >
->>>>>>> 9f45b9584b66b8456bc0db1a358fd24908ae1f30
           <v-icon>mdi-basket</v-icon>
         </v-btn>
-
         <v-spacer> </v-spacer>
       </v-toolbar-items>
     </v-toolbar>

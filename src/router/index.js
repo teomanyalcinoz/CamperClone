@@ -39,11 +39,6 @@ const routes = [
     name: "tws",
     component: () => import('@/views/Tws.vue'),
   },
-  {
-    path: "/register",
-    name: "register",
-    component: () => import('@/views/Register.vue'),
-  },
 
 
 ]

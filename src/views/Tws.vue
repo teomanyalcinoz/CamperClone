@@ -21,7 +21,7 @@
                   dört yıl ve sekiz sayı sürdü. Bu 11. sayı, ilgi çekici bir
                   kronolojiye ve karmaşık arkeolojiye sahip bir adanın
                   araştırması ve keşfi. Bu yolculuk, adanın Akdeniz özünden ödün
-                  vermeden yolculuğunu sorgluyor.
+                  vermeden yolculuğunu sorgluyor. 
                 </div>
               </div>
             </v-flex>
@@ -45,7 +45,6 @@
   background-color: red;
   align-content: start;
   padding: 10px;
-  color: white    ;
 }
 </style>
 
