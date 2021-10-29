@@ -52,10 +52,18 @@
   padding-bottom: 0px;
 }
 
+<<<<<<< HEAD
 #expand {
   border-block-color: "black";
   justify-items: center;
 }
+=======
+    #expand{
+        border-block-color: "black";
+        justify-items: center;
+                
+    }
+>>>>>>> 9f45b9584b66b8456bc0db1a358fd24908ae1f30
 
 .boldclass {
   font-weight: bold;
