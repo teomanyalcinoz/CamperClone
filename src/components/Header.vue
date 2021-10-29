@@ -27,16 +27,10 @@
           <Hesabim v-show="expand" id="hesabimexpand"></Hesabim>
         </div>
 
-        <v-btn
-          icon
-          @mouseover="expand = false"
-          class="btn btn-secondary"
-          data-toggle="tooltip"
-          data-placement="bottom"
-          title="Camper'ınızı almak için <b> butonuna tıklayın."
-        >
+        <v-btn icon @mouseover="expand = false">
           <v-icon>mdi-basket</v-icon>
         </v-btn>
+
         <v-spacer> </v-spacer>
       </v-toolbar-items>
     </v-toolbar>

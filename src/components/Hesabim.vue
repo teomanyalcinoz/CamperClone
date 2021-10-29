@@ -1,87 +1,84 @@
 
 <template>
-<div>
-    
-    <v-expand-transition id="expand"
-        ><v-card
-            height=auto
-            width=auto 
-            id="card"
-            ><div id="expanddiv">
-                <v-card-text class="boldclass" id="campertext">
-                   Camper Hesabım
-                </v-card-text>
-                <v-card-text id="oturumtext">
-                   Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
-                </v-card-text>
-                <v-btn small elevation="4" color="black" id="btnoturum">Oturum Aç</v-btn>
-                <v-card-text>
-                    Siparişinizi görmek için
-                </v-card-text>
-                <p><a href="https://www.w3schools.com/" id="linksiparis" class="boldclass">Siparişleriniz</a></p>
-            </div>
-        </v-card>
-        
-    </v-expand-transition> 
+  <div>
+    <v-expand-transition id="expand">
+      <v-card height="auto" width="auto" id="card">
+        <div id="expanddiv">
+          <v-card-text class="boldclass" id="campertext">
+            Camper Hesabım
+          </v-card-text>
+          <v-card-text id="oturumtext">
+            Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
+          </v-card-text>
+          <v-btn elevation="4" color="black" id="btnoturum" to="/register"
+            >Oturum Aç</v-btn
+          >
 
-</div>
-
+          <Oturum />
+          <v-card-text> Siparişinizi görmek için </v-card-text>
+          <p>
+            <a
+              href="https://www.w3schools.com/"
+              id="linksiparis"
+              class="boldclass"
+              >Siparişleriniz</a
+            >
+          </p>
+        </div>
+      </v-card>
+    </v-expand-transition>
+  </div>
 </template>
 
 <style scoped>
-    #linksiparis {
-        padding-left:16px ;
+#linksiparis {
+  padding-left: 16px;
+}
 
-    }
+#expanddiv {
+  padding-left: 16px;
+  padding-bottom: 22px;
+}
 
-    #expanddiv {
-        padding-left: 16px;
-        padding-bottom: 22px;
+#linksiparis {
+  color: black;
+}
+#oturumtext {
+  padding-top: 5px;
+}
 
-    }
+#campertext {
+  font-size: 18px;
+  padding-bottom: 0px;
+}
 
-    #linksiparis {
-        color: black;
-    }
-    #oturumtext {
-        padding-top: 5px;
-    }
+#expand {
+  border-block-color: "black";
+  justify-items: center;
+}
 
-    #campertext {
-        font-size: 18px;
-        padding-bottom: 0px;
-    }
+.boldclass {
+  font-weight: bold;
+  font-size: 16px;
+}
 
-    #expand{
-        border-block-color: "black";
-        justify-items: center;
-        
-        
-    }
-
-    .boldclass{
-        font-weight: bold;
-        font-size: 16px;
-        
-    }
-
-    #btnoturum {
-        font-size: 16px;
-        height: 40px;
-        background: black;
-        color: white;
-        text-transform: none;
-        margin-left: 70px;
-        margin-bottom: 10px;
-    }    
+#btnoturum {
+  font-size: 16px;
+  height: 40px;
+  background: black;
+  color: white;
+  text-transform: none;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
 </style>
 
 <script>
+import Oturum from "./OturumAc.vue";
 export default {
   name: "hesabim",
-  components: { },
-  data() {
-    return {};
+  component: {
+    Oturum,
   },
 };
 </script>
