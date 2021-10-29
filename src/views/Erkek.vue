@@ -1,6 +1,6 @@
 <template>
   <div class="erkek">
-    <h1 id="baslık">Erkek Ayakkabıları</h1>
+    <h1 id="baslık">Erkek adam Ayakkabıları</h1>
     <Filt />
     <v-row id="row">
       <v-col v-for="n in 3" :key="n" class="d-flex child-flex" cols="4">
