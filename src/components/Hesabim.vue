@@ -55,8 +55,7 @@
     #expand{
         border-block-color: "black";
         justify-items: center;
-        
-        
+                
     }
 
     .boldclass{

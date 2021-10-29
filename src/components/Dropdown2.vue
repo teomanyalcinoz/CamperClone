@@ -9,11 +9,12 @@
                 <v-card>
                     <v-layout row wrap>
                         <v-flex xs1>
+                            <v-btn class="buton">Spor Ayakkabılar</v-btn>
                             <v-btn class="buton">Günlük Ayakkabılar</v-btn>
                             
                             <v-btn class="buton">Klasik Ayakkabılar</v-btn>
                             <v-btn class="buton">Sandaletler</v-btn>
-                            <v-btn class="buton">Topuklular</v-btn>
+                            <v-btn class="buton">Derİ Olmayan</v-btn>
                             <v-btn class="buton">Botlar</v-btn>
                             
                         </v-flex>

@@ -11,10 +11,24 @@
         ></v-img>
       </router-link>
       <v-toolbar-items>
-        <v-btn flat to="/kadın">Kadın</v-btn>
-        <v-btn flat to="/erkek">Erkek</v-btn>
-        <v-btn flat to="/cocuk">Çocuk</v-btn>
-        <v-btn flat to="/tws">TheWalkingSociety</v-btn>
+
+        <v-btn id="kadinbtn" @mouseover="dropshow=true" flat to="/kadın">Kadın</v-btn>
+        <div @mouseleave="dropshow=false">
+        <Drop v-show="dropshow" id="dropexpand"></Drop>
+        </div>
+
+        <v-btn  @mouseover="dropshow2=true" id="erkekbtn" flat to="/erkek">Erkek</v-btn>
+        <div @mouseleave="dropshow2=false">
+          <Drop2  v-show="dropshow2" id="dropexpand"></Drop2>
+        </div>
+
+        <v-btn @mouseover="dropshow3=true" id="cocukbtn" flat to="/cocuk">Çocuk</v-btn>
+        <div @mouseleave="dropshow3=false">
+          <Drop3  v-show="dropshow3" id="dropexpand"></Drop3>
+        </div>
+
+
+        <v-btn @mouseover="dropshow=false,dropshow2=false,dropshow3=false" id="twsbtn" flat to="/tws">TheWalkingSociety</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items
@@ -33,7 +47,7 @@
           class="btn btn-secondary"
           data-toggle="tooltip"
           data-placement="bottom"
-          title="Camper'ınızı almak için <b> butonuna tıklayın."
+          title="Camper'ınızı almak için Sepete Ekle butonuna tıklayın."
         >
           <v-icon>mdi-basket</v-icon>
         </v-btn>
@@ -54,11 +68,29 @@
   bottom: 0px;
   right: 179px;
 }
+#kadinbtn{
+  position: fixed;
+}
+
+
+#erkekbtn{
+  position: fixed;
+  bottom: 0px;
+  left: 252px;
+}
+#cocukbtn {
+  position: fixed;
+  left: 335px;
+}
 
 #hesabimbtn {
   position: fixed;
   bottom: 0px;
   right: 75px;
+}
+#twsbtn{
+  position: fixed;
+  left: 424px;
 }
 
 #hesabimexpand {
@@ -66,69 +98,43 @@
   margin-top: 65px;
   justify-self: right;
   margin-right: -65px;
-  background-color: cornflowerblue;
-  width: 280px;
-}
-.dropbtn {
   background-color: white;
-  color: black;
-  padding: 10px;
-  font-size: 15px;
-  border: none;
+
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-left: 0px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
+#dropexpand {
+  z-index: 2;
+  margin-top: 65px;
+  width: 400px;
   background-color: white;
-  min-width: 160px;
-  z-index: 1;
+  
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: white;
-}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: white;
-}
 </style>
   
 <script>
 import Hesabim from "./Hesabim.vue";
 import Drop from "./Dropdown.vue";
+import Drop2 from "./Dropdown2.vue"
+import Drop3 from "./Dropdown3.vue"
 
 export default {
   name: "header",
   components: {
     Hesabim,
     Drop,
+    Drop2,
+    Drop3,
   },
 
   data() {
     return {
       expand: false,
+      dropshow: false,
+      dropshow2: false,
+      dropshow3: false,
+      
     };
   },
 };
