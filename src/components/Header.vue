@@ -11,24 +11,36 @@
         ></v-img>
       </router-link>
       <v-toolbar-items>
-
-        <v-btn id="kadinbtn" @mouseover="dropshow=true" flat to="/kadın">Kadın</v-btn>
-        <div @mouseleave="dropshow=false">
-        <Drop v-show="dropshow" id="dropexpand"></Drop>
+        <v-btn id="kadinbtn" @mouseover="dropshow = true" flat to="/kadın"
+          >Kadın</v-btn
+        >
+        <div @mouseleave="dropshow = false">
+          <Drop v-show="dropshow" id="dropexpand"></Drop>
         </div>
 
-        <v-btn  @mouseover="dropshow2=true" id="erkekbtn" flat to="/erkek">Erkek</v-btn>
-        <div @mouseleave="dropshow2=false">
-          <Drop2  v-show="dropshow2" id="dropexpand"></Drop2>
+        <v-btn @mouseover="dropshow2 = true" id="erkekbtn" flat to="/erkek"
+          >Erkek</v-btn
+        >
+        <div @mouseleave="dropshow2 = false">
+          <Drop2 v-show="dropshow2" id="dropexpand"></Drop2>
         </div>
 
-        <v-btn @mouseover="dropshow3=true" id="cocukbtn" flat to="/cocuk">Çocuk</v-btn>
-        <div @mouseleave="dropshow3=false">
-          <Drop3  v-show="dropshow3" id="dropexpand"></Drop3>
+        <v-btn @mouseover="dropshow3 = true" id="cocukbtn" flat to="/cocuk"
+          >Çocuk</v-btn
+        >
+        <div @mouseleave="dropshow3 = false">
+          <Drop3 v-show="dropshow3" id="dropexpand"></Drop3>
         </div>
 
-
-        <v-btn @mouseover="dropshow=false,dropshow2=false,dropshow3=false" id="twsbtn" flat to="/tws">TheWalkingSociety</v-btn>
+        <v-btn
+          @mouseover="
+            (dropshow = false), (dropshow2 = false), (dropshow3 = false)
+          "
+          id="twsbtn"
+          flat
+          to="/tws"
+          >TheWalkingSociety</v-btn
+        >
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items
@@ -68,12 +80,11 @@
   bottom: 0px;
   right: 179px;
 }
-#kadinbtn{
+#kadinbtn {
   position: fixed;
 }
 
-
-#erkekbtn{
+#erkekbtn {
   position: fixed;
   bottom: 0px;
   left: 252px;
@@ -88,7 +99,7 @@
   bottom: 0px;
   right: 75px;
 }
-#twsbtn{
+#twsbtn {
   position: fixed;
   left: 424px;
 }
@@ -99,7 +110,7 @@
   justify-self: right;
   margin-right: -65px;
   background-color: white;
-
+  width: 300px;
 }
 
 #dropexpand {
@@ -107,17 +118,14 @@
   margin-top: 65px;
   width: 400px;
   background-color: white;
-  
 }
-
-
 </style>
   
 <script>
 import Hesabim from "./Hesabim.vue";
 import Drop from "./Dropdown.vue";
-import Drop2 from "./Dropdown2.vue"
-import Drop3 from "./Dropdown3.vue"
+import Drop2 from "./Dropdown2.vue";
+import Drop3 from "./Dropdown3.vue";
 
 export default {
   name: "header",
@@ -134,7 +142,6 @@ export default {
       dropshow: false,
       dropshow2: false,
       dropshow3: false,
-      
     };
   },
 };
