@@ -10,7 +10,7 @@
           <v-card-text id="oturumtext">
             Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
           </v-card-text>
-          <v-btn small elevation="4" color="black" id="btnoturum"
+          <v-btn small elevation="4" color="black" id="btnoturum" to="/signin"
             >Oturum Aç</v-btn
           >
           <v-card-text> Siparişinizi görmek için </v-card-text>

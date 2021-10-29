@@ -39,6 +39,16 @@ const routes = [
     name: "tws",
     component: () => import('@/views/Tws.vue'),
   },
+  {
+    path: "/signin",
+    name: "signin",
+    component: () => import('@/views/Signin.vue'),
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: () => import('@/views/Register.vue'),
+  },
 
 
 ]
