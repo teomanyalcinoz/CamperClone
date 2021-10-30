@@ -59,15 +59,15 @@
 #kayıtBaslık {
   font-weight: bold;
   font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 #phone {
   margin-left: 37px;
   font-size: 50px;
 }
-#ilkd {
-  margin-top: 0px;
-  margin-left: 40px;
-}
+
 #yand {
   margin-left: 1140px;
   margin-top: 0px;

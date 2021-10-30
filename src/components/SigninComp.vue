@@ -5,13 +5,13 @@
         <v-card elevation="0">
           <a
             href="/home"
-            name="Fedorae Education"
-            title="Fedorae Education"
+            name="Camper"
+            title="Ana Sayfa"
             target="_blank"
           >
             <v-img
               src="@/assets/camper.png"
-              alt="Fedorae Education Log"
+              alt="Camper"
               contain
               height="200"
             ></v-img>
@@ -19,7 +19,7 @@
           <v-card-text>
             <v-form>
               <v-text-field
-                label="Enter your email"
+                label="E-POSTA ADRESİ"
                 name="email"
                 prepend-inner-icon="mdi-email"
                 type="email"
@@ -27,33 +27,26 @@
                 outlined
               ></v-text-field>
               <v-text-field
-                label="Enter your password"
+                label="Şifre"
                 name="password"
                 prepend-inner-icon="mdi-lock"
                 type="password"
-                suffix="| Forgot?"
+                suffix="| Unuttum"
                 class="rounded-0"
                 outlined
               ></v-text-field>
-              <v-btn class="rounded-0" color="#000000" x-large block dark
-                >Login</v-btn
+              <v-btn id="oturumbtn" x-large block 
+                >Oturum Aç</v-btn
               >
               <v-card-actions class="text--secondary">
-                <v-checkbox color="#000000" label="Remember me"></v-checkbox>
+                <v-checkbox color="#000000" label="Beni Hatırla"></v-checkbox>
                 <v-spacer></v-spacer>
-                <!-- <router-link :to="{ name: 'SignUp' }">Sign Up</router-link> -->
-                No account?
-                <v-btn flat to="/register">No acc?</v-btn>
+                
+                <v-btn class="ml-2 mb-2" flat to="/register" id="kayitbtn">Kayıt Ol</v-btn>
               </v-card-actions>
             </v-form>
           </v-card-text>
-          <v-card-actions class="ml-6 mr-6 text-center">
-            <p>
-              By continuing, you agree to Fedorae Education's
-              <a href="#" class="pl-2" style="color: #000000">Policy</a> and
-              <a href="#" class="pl-2" style="color: #000000">Terms of Use</a>
-            </p>
-          </v-card-actions>
+        
         </v-card>
       </v-col>
     </v-row>
@@ -64,4 +57,23 @@
 export default {};
 </script>
 <style scoped>
+@import'~bootstrap/dist/css/bootstrap.css';
+#kayitbtn {
+  text-decoration: none;
+  text-transform: none;
+  width: 100px;
+}
+#kayitbtn:hover{
+  background-color: black;
+  color: white;
+}
+#oturumbtn{
+  background-color: black;
+  color: white;
+}
+
+#oturumbtn:hover {
+  background-color: white;
+  color: black;
+}
 </style>

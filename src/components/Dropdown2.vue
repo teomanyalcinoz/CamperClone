@@ -2,20 +2,20 @@
   <v-expand-transition id="dropexpand">
       <v-card
             height=auto
-            width=auto 
+            width=250px 
             id="card"
             >
              <v-container>
                 <v-card>
                     <v-layout row wrap>
-                        <v-flex xs1>
-                            <v-btn class="buton">Spor Ayakkabılar</v-btn>
-                            <v-btn class="buton">Günlük Ayakkabılar</v-btn>
+                        <v-flex col-6 col-sm-4>
+                            <v-btn class="buton" elevation="0px">Spor Ayakkabılar</v-btn>
+                            <v-btn class="buton" elevation="0px">Günlük Ayakkabılar</v-btn>
                             
-                            <v-btn class="buton">Klasik Ayakkabılar</v-btn>
-                            <v-btn class="buton">Sandaletler</v-btn>
-                            <v-btn class="buton">Derİ Olmayan</v-btn>
-                            <v-btn class="buton">Botlar</v-btn>
+                            <v-btn class="buton" elevation="0px">Klasik Ayakkabılar</v-btn>
+                            <v-btn class="buton" elevation="0px">Sandaletler</v-btn>
+                            <v-btn class="buton" elevation="0px">Derİ Olmayan</v-btn>
+                            <v-btn class="buton" elevation="0px">Botlar</v-btn>
                             
                         </v-flex>
                     </v-layout>
@@ -44,6 +44,7 @@ export default {
 <style scoped>
 .buton {
     margin: 1px;
+    
 }
 
 #dropexpand {
