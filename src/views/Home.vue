@@ -178,6 +178,7 @@
 .butonlar:hover {
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 
 #btn1 {

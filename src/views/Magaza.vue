@@ -1,8 +1,55 @@
 <template>
   <div class="Magaza">
-    <h1 class="display-3 text-center">Mağaza Bul</h1>
+    <br></br>
+    <h1 class="display-4 text-center" id="camperh1">Camper Mağazalar</h1>
+    <br></br>
+    <v-text-field class="xm-10" id="arama" placeholder="Arama Mağazası" 
+    prepend-inner-icon="mdi-magnify" outlined>
+    </v-text-field>
+    <span id="span">Ex. Spain, Paris, Madrid, …<br></span>
+    <span id="span2">En yakın mağazaları görmek için coğrafi konumunuzu etkinleştirin:</span>
+    <br></br>
+      <v-btn elevation="0" id="konumbtn">
+      <v-icon
+        left
+        color="black"
+        
+      >mdi-crosshairs-gps
+      </v-icon>
+      Konumu Kullan</v-btn>
+    
+
+
   </div>
 </template>
+
+
+<style scoped>
+#konumbtn{
+  text-transform: none;
+  margin-left: 660px;
+  margin-bottom: 50px;
+
+}
+#span2{
+  margin-left: 525px;
+}
+#span {
+  margin-left: 680px;
+  font-size: 14px;
+  color: gray;
+}
+.magaza{
+  padding-top: 50px;
+}
+.v-text-field{
+  width: 400px;
+  margin:auto;
+}
+  @import'~bootstrap/dist/css/bootstrap.css';
+
+
+</style>
 
 <script>
 export default {
