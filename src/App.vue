@@ -15,6 +15,7 @@
 
 #header {
   z-index: 1;
+  
 }
 
 html,body
@@ -24,6 +25,10 @@ html,body
     margin: 0px;
     padding: 0px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 </style>
 
 <script>

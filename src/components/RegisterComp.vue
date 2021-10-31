@@ -66,6 +66,10 @@ export default {};
 </script>
 
 <style lang="css" scoped>
+<<<<<<< HEAD
+=======
+@import'~bootstrap/dist/css/bootstrap.css';
+>>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 #olusturbtn{
   background-color: black;
 }
@@ -74,9 +78,12 @@ export default {};
   color: black;
 }
 
+<<<<<<< HEAD
 #container{
   padding-left: 630px;
 }
 
+=======
+>>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 
 </style>

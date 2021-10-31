@@ -10,8 +10,8 @@
           <v-text class="sez"> Sezon Ortası İndirimi </v-text>
           <v-spacer></v-spacer>
           <v-text class="gifspan">%30'a Varan İndirim<br /> </v-text>
-          <v-btn id="btnKadın" depressed to="/kadın"> Kadın </v-btn>
-          <v-btn id="btnErkek" depressed to="/erkek"> Erkek </v-btn>
+          <v-btn class="butonlar" id="btnKadın" depressed to="/kadın"> Kadın </v-btn>
+          <v-btn class="butonlar" id="btnErkek" depressed to="/erkek"> Erkek </v-btn>
         </v-img>
       </v-card>
     </v-col>
@@ -29,7 +29,7 @@
           <v-spacer></v-spacer>
           <v-text class="gifspan">The Walking Society<br /> </v-text>
           <v-spacer></v-spacer>
-          <v-btn id="kampanya" depressed> Kampanyaya Göz Atın </v-btn>
+          <v-btn class="butonlar" id="kampanya" to="/tws" depressed> Kampanyaya Göz Atın </v-btn>
         </v-img>
       </v-card>
     </v-col>
@@ -175,13 +175,10 @@
   margin: auto;
 }
 
-#btn1:hover,
-#btn2:hover,
-#btn3:hover,
-#btn4:hover,
-#btn5:hover {
+.butonlar:hover {
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 
 #btn1 {
@@ -204,19 +201,23 @@
 #btnKadın {
   margin-right: 50px;
   width: 150px;
+  margin-top: 30px;
 }
 #btnErkek {
   margin-right: 500px;
   width: 150px;
+  margin-top: 30px;
 }
 #kampanya {
   width: 300px;
   margin-right: 500px;
+  margin-top: 30px;
 }
 </style>
 
 <script>
 import Carousel from "../components/CarouselHome.vue";
+
 export default {
   name: "main",
   components: {
