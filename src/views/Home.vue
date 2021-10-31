@@ -29,7 +29,7 @@
           <v-spacer></v-spacer>
           <v-text class="gifspan">The Walking Society<br /> </v-text>
           <v-spacer></v-spacer>
-          <v-btn class="butonlar" id="kampanya" depressed> Kampanyaya Göz Atın </v-btn>
+          <v-btn class="butonlar" id="kampanya" to="/tws" depressed> Kampanyaya Göz Atın </v-btn>
         </v-img>
       </v-card>
     </v-col>

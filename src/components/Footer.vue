@@ -67,6 +67,10 @@
   margin-left: 37px;
   font-size: 50px;
 }
+#ilkd {
+  margin-top: 0px;
+  margin-left: 40px;
+}
 
 #yand {
   margin-left: 1140px;
