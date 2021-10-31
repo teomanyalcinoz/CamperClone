@@ -1,7 +1,8 @@
 <template>
   <v-card color="grey lighten-4" flat height="65px" tile>
     <v-toolbar class="fixedtoolbar">
-      <router-link to="/">
+      <div @mouseover="dropshow = false, dropshow2 = false, dropshow3 = false">
+      <router-link to="/" >
         <v-img
           src="@/assets/camper.png"
           alt=""
@@ -10,41 +11,41 @@
           width="150px"
         ></v-img>
       </router-link>
+      </div>
       <v-toolbar-items>
-        <v-btn id="kadinbtn" @mouseover="dropshow = true" flat to="/kadın"
+        <v-btn id="kadinbtn" class="buton" @mouseover="dropshow = true,dropshow2=false,dropshow3=false" flat to="/kadın"
           >Kadın</v-btn
         >
         <div @mouseleave="dropshow = false">
           <Drop v-show="dropshow" id="dropexpand"></Drop>
         </div>
 
-        <v-btn @mouseover="dropshow2 = true" id="erkekbtn" flat to="/erkek"
+        <v-btn @mouseover="dropshow2 = true,dropshow=false,dropshow3=false" id="erkekbtn" class="buton" flat to="/erkek"
           >Erkek</v-btn
         >
         <div @mouseleave="dropshow2 = false">
-          <Drop2 v-show="dropshow2" id="dropexpand"></Drop2>
+          <Drop2 v-show="dropshow2" id="dropexpand2"></Drop2>
         </div>
 
-        <v-btn @mouseover="dropshow3 = true" id="cocukbtn" flat to="/cocuk"
+        <v-btn @mouseover="dropshow3 = true,dropshow=false,dropshow2=false" class="buton" id="cocukbtn" flat to="/cocuk"
           >Çocuk</v-btn
         >
         <div @mouseleave="dropshow3 = false">
-          <Drop3 v-show="dropshow3" id="dropexpand"></Drop3>
+          <Drop3 v-show="dropshow3" id="dropexpand3"></Drop3>
         </div>
 
         <v-btn
-          @mouseover="
-            (dropshow = false), (dropshow2 = false), (dropshow3 = false)
-          "
+          @mouseover="(dropshow = false), (dropshow2 = false), (dropshow3 = false)"
           id="twsbtn"
           flat
           to="/tws"
+          class="buton"
           >TheWalkingSociety</v-btn
         >
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items
-        ><v-btn flat to="/magaza" id="magazabtn" @mouseover="expand = false"
+        ><v-btn flat to="/magaza" id="magazabtn" class="buton" @mouseover="expand = false"
           >Mağaza Bul</v-btn
         >
         <v-btn id="hesabimbtn" @mouseover="expand = true" flat>Hesabım</v-btn>
@@ -61,7 +62,7 @@
           data-placement="bottom"
           title="Camper'ınızı almak için Sepete Ekle butonuna tıklayın."
         >
-          <v-icon>mdi-basket</v-icon>
+        <v-icon>mdi-basket</v-icon>
         </v-btn>
         <v-spacer> </v-spacer>
       </v-toolbar-items>
@@ -72,6 +73,9 @@
 
 
 <style scoped>
+.buton:hover{
+  text-decoration: none;
+}
 .fixedtoolbar {
   position: sticky;
 }
@@ -82,8 +86,8 @@
 }
 #kadinbtn {
   position: fixed;
+  bottom: 0px;
 }
-
 #erkekbtn {
   position: fixed;
   bottom: 0px;
@@ -91,9 +95,9 @@
 }
 #cocukbtn {
   position: fixed;
+  bottom: 0px;
   left: 335px;
 }
-
 #hesabimbtn {
   position: fixed;
   bottom: 0px;
@@ -101,9 +105,9 @@
 }
 #twsbtn {
   position: fixed;
+  bottom: 0px;
   left: 424px;
 }
-
 #hesabimexpand {
   z-index: 2;
   margin-top: 65px;
@@ -112,12 +116,22 @@
   background-color: white;
   width: 300px;
 }
-
 #dropexpand {
   z-index: 2;
   margin-top: 65px;
-  width: 400px;
   background-color: white;
+}
+#dropexpand2{
+  z-index: 2;
+  margin-top: 65px;
+  background-color: white;
+  margin-left: 80px;
+}
+#dropexpand3 {
+  z-index: 2;
+  margin-top: 65px;
+  background-color: white;
+  margin-left: 165px;
 }
 </style>
   

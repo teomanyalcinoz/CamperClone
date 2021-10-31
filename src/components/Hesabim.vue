@@ -16,7 +16,7 @@
           <v-card-text> Siparişinizi görmek için </v-card-text>
           <p>
             <a
-              href="https://www.w3schools.com/"
+              href="/"
               id="linksiparis"
               class="boldclass"
               >Siparişleriniz</a
