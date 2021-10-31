@@ -76,10 +76,6 @@
 .buton:hover{
   text-decoration: none;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 .fixedtoolbar {
   position: sticky;
 }
@@ -125,20 +121,12 @@
   margin-top: 65px;
   background-color: white;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 #dropexpand2{
   z-index: 2;
   margin-top: 65px;
   background-color: white;
   margin-left: 80px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 #dropexpand3 {
   z-index: 2;
   margin-top: 65px;

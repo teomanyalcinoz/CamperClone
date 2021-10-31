@@ -27,12 +27,6 @@
 #karstBtn {
   margin-top: 20px;
   margin-left: -40px;
-  text-transform: none;
-  width: 220px;
-}
-#karstBtn:hover {
-  background-color: black;
-  color: white;
 }
 #karst {
   color: white;

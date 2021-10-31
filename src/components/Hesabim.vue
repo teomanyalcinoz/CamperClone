@@ -10,7 +10,7 @@
           <v-card-text id="oturumtext">
             Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
           </v-card-text>
-          <v-btn outlined elevation="0" color="black" id="btnoturum" to="/signin"
+          <v-btn small elevation="4" color="black" id="btnoturum" to="/signin"
             >Oturum Aç</v-btn
           >
           <v-card-text> Siparişinizi görmek için </v-card-text>
@@ -68,12 +68,6 @@
   text-transform: none;
   margin-left: 70px;
   margin-bottom: 10px;
-}
-
-#btnoturum:hover {
-  background-color: white;
-  color: black;
-  text-decoration: none;
 }
 </style>
 

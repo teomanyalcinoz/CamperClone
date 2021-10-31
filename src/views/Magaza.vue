@@ -25,21 +25,14 @@
 
 
 <style scoped>
-<<<<<<< HEAD
 #camperh1{
   margin-left: 635px;
 }
 
-=======
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 #konumbtn{
   text-transform: none;
   margin-left: 660px;
   margin-bottom: 50px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 }
 #span2{
   margin-left: 525px;
@@ -56,12 +49,6 @@
   width: 400px;
   margin:auto;
 }
-<<<<<<< HEAD
-=======
-  @import'~bootstrap/dist/css/bootstrap.css';
-
-
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 </style>
 
 <script>

@@ -58,11 +58,7 @@ export default {};
 </script>
 
 <style scoped>
-<<<<<<< HEAD
 
-=======
-@import'~bootstrap/dist/css/bootstrap.css';
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 #kayitbtn {
   text-decoration: none;
   text-transform: none;
@@ -76,10 +72,6 @@ export default {};
   background-color: black;
   color: white;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 405ddbbe22e88f6647109075af6a27c664c72e98
 #oturumbtn:hover {
   background-color: white;
   color: black;
