@@ -66,8 +66,21 @@
   background: black;
   color: white;
   text-transform: none;
-  margin-left: 70px;
+  margin-left: 15px;
   margin-bottom: 10px;
+  width: 250px;
+  border-radius: 0px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: none;
+  transition: 0.4s;
+}
+
+#btnoturum:hover{
+  color: black;
+  background-color:white ;
+  
 }
 </style>
 
