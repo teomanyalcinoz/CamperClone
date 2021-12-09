@@ -4,7 +4,8 @@
       <v-col id="col1">
         <h3>Kaydolun ve %10 İndirim Kazanın</h3>
         <span>Camper ailesinin bir parçası olmak kişiye özel tekliflere, indirimlere ve promosyonlara erişim sağlar.</span><br>
-            <v-btn id="btnabone">Abone Ol</v-btn>
+        <!-- <v-btn id="btnabone">Abone Ol</v-btn> -->
+        <Abone/>
         
       </v-col>
       <v-col id="col2">

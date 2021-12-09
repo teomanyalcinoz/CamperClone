@@ -47,28 +47,26 @@ body {
   font-family: "montserrat", sans-serif;
 }
 #app {
-  height: 50px;
+  height: auto;
   width: 200px;
   overflow: hidden;
 }
 
 .button {
   appearance: none;
-  border: none;
+  border-style: solid;
+  border-radius: unset;
   background: none;
   cursor: pointer;
-  margin-left: 50px;
+  margin-top: 10px;
   display: inline-block;
-  padding: 15px 25px;
-
-  border-radius: 8px;
+  padding: 12px 22px;
   color: #222;
-  font-size: 11px;
   font-weight: 500;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
   transition: 0.4s;
   &:hover {
-    box-shadow: 6px 6px rgba(0, 0, 0, 0.4);
+    background-color: black;
+    color: white;
   }
 }
 
