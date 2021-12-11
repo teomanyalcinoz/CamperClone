@@ -3,7 +3,7 @@
   <v-app id="vapp">
   <v-card>
   
-  <v-carousel height="auto" cycle>
+  <v-carousel height="600" cycle>
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
