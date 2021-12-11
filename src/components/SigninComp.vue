@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fill-height" fluid>
+  <v-container id="cont" class="fill-height" fluid>
     <v-row align="center" justify="center" dense>
       <v-col cols="12" sm="8" md="4" lg="4">
         <v-card elevation="0">
@@ -10,14 +10,18 @@
             target="_blank"
           >
             <v-img
-              src="@/assets/camper.png"
+              src="@/assets/my-account-hand.gif"
               alt="Camper"
               contain
               height="200"
             ></v-img>
           </a>
           <v-card-text>
-            <v-form>
+           <h1 class="display-3 text-center mt-4" id="h1">Sizi Tekrar Görmek Güzel</h1>
+           <h3 class="text-center my-4" id="h3">Giriş yapmak için oturum açın:</h3>
+          </v-card-text>
+          <v-card-text>
+            <v-form id="form">
               <v-text-field
                 label="E-POSTA ADRESİ"
                 name="email"
@@ -31,7 +35,6 @@
                 name="password"
                 prepend-inner-icon="mdi-lock"
                 type="password"
-                suffix="| Unuttum"
                 class="rounded-0"
                 outlined
               ></v-text-field>
@@ -58,7 +61,13 @@ export default {};
 </script>
 
 <style scoped>
-
+#form{
+  width: 450px;
+}
+#cont{
+  width: 1300px;
+  margin-left: 500px;
+}
 #kayitbtn {
   text-decoration: none;
   text-transform: none;
@@ -74,6 +83,15 @@ export default {};
 }
 #oturumbtn:hover {
   background-color: white;
+  color: black;
+}
+#h1{
+  margin-top: 20px;
+  margin-left: 70px;
+  color: black;
+}
+#h3{
+  margin-left: 120px;
   color: black;
 }
 </style>
