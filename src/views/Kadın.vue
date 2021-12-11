@@ -22,7 +22,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <v-row id="row">
+    <v-row id="row2">
       <v-col v-for="n in 5" :key="n" class="d-flex child-flex" cols="4">
         <v-img
           :src="`https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K200508-04${
@@ -48,10 +48,13 @@
 
 <style scoped>
 #baslık {
-  margin-left: 620px;
+  margin-left: 680px;
+  margin-top: 90px;
+  font-size: 25px;
+  font-weight: normal;
 }
 #row {
-  z-index: 0;
+  margin-top: -700px;
 }
 </style>
 

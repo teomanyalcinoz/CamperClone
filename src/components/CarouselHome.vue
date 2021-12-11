@@ -10,7 +10,8 @@
       :src="item.src"
       reverse-transition="fade-transition"
       transition="fade-transition"
-      
+      eager
+      height="100%"
     >
       <div id="karstDiv">
         <v-text id="karst">KARST</v-text>

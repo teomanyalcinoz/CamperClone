@@ -22,7 +22,7 @@
       </v-card>
     </v-col>
 
-    <v-col class="d-flex child-flex kolon" cols="12" sm="12">
+    <v-col id="ewew" class="d-flex child-flex kolon" cols="12" sm="12">
       <v-card>
         <v-img src="@/assets/camper_gif.gif" aspect-ratio="2" class="images">
           <v-text class="sez"> 11. Sayı Kıbrıs </v-text>
@@ -121,7 +121,9 @@
 #row {
   z-index: 0;
 }
-
+#ewew{
+  margin-top: -295px;
+}
 #text {
   padding-left: 650px;
 }
