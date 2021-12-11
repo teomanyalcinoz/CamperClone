@@ -1,5 +1,5 @@
 <template>
-  <v-card color="grey lighten-4" flat height="65px" tile>
+  <v-card id="headermaincard" height="65px">
     <v-toolbar class="fixedtoolbar">
       <div @mouseover="dropshow = false, dropshow2 = false, dropshow3 = false">
       <router-link to="/" >
@@ -7,7 +7,7 @@
           src="@/assets/camper.png"
           alt=""
           contain
-          height="25px"
+          height="40px"
           width="150px"
         ></v-img>
       </router-link>
@@ -80,6 +80,11 @@
 
 
 <style scoped>
+#headermaincard{
+  min-height: 0px;
+
+}
+
 .buton:hover{
   text-decoration: none;
 }
@@ -145,12 +150,12 @@
 #hesappp{
   position: fixed;
   margin-top: 20px;
-  margin-left: 1258px;
+  margin-left: 1220px;
 }
 #hesabimbtn {
   position: fixed;
   bottom: 0px;
-  right: 75px;
+  right: 50px;
   background-color: white;
   color: black;
   opacity: 0;
