@@ -18,7 +18,7 @@
 
     <v-col class="d-flex child-flex kolon" cols="12" sm="12">
       <v-card>
-        <Carousel></Carousel>
+        <Carousel id="karosel"></Carousel>
       </v-card>
     </v-col>
 
@@ -111,6 +111,10 @@
 </template>
 
 <style scoped >
+#karosel {
+  aspect-ratio: 1.8;
+}
+
 .kolon {
   padding: 0px;
 }

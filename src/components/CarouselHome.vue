@@ -1,5 +1,9 @@
 <template  height="100%" width="100%">
-  <v-carousel  cycle>
+  <div>
+  <v-app id="vapp">
+  <v-card>
+  
+  <v-carousel height="auto" cycle>
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -13,20 +17,37 @@
         <br />
         <v-text id="karst2">Doğanın Gücü</v-text>
         <br />
-        <v-btn id="karstBtn">Koleksiyonu Keşfet</v-btn>
+        <v-btn id="karstBtn" elevation="0">Koleksiyonu Keşfet</v-btn>
       </div>
     </v-carousel-item>
   </v-carousel>
+  
+  </v-card>
+  </v-app>
+  </div>
 </template>
 
 <style scoped>
+#vapp {
+  height: 500px;
+}
+
 #karstDiv {
   margin-top: 200px;
-  margin-left: -100px;
+  margin-left: 700px;
 }
 #karstBtn {
   margin-top: 20px;
-  margin-left: -40px;
+  margin-left: -35px;
+  width: 200px;
+  border-radius: 0;
+  text-transform: none;
+  height: 40px;
+  transition: 0.2s;
+}
+#karstBtn:hover{
+  color: white;
+  background-color: black;
 }
 #karst {
   color: white;
