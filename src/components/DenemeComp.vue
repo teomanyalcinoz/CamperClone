@@ -126,12 +126,16 @@
       height="800"
       width="500"
     >
-      <span style="font-size: 24px; margin-left: 24px"
-        >Sizi tekrar görmek güzel</span
-      ><br /><br />
-      <span style="font-size: 14px; margin-left: 60px"
-        >Giriş yapmak için oturum açın:</span
+      <div style="text-align:center; padding:5px">
+      <span style="font-size: 24px; margin-left: 24px;"
+        >Camper Hesabım</span
       >
+      </div>
+      <div width="200px" style="display:flex; padding:10px; text-align: center;">
+        <span style="font-size: 14px;"
+        >Camper hesabınızın avantajlarından faydalanmak için e-posta adresinizle ilişkili bir şifre oluşturmanız yeterlidir.
+        </span>
+      </div>
       <v-form style="margin-top: 20px; padding-left: 20px; padding-right: 20px">
         <v-text-field
           label="E-POSTA ADRESİ"
@@ -141,35 +145,52 @@
           dense
         ></v-text-field>
         <v-text-field
-          label="Şifre"
+          label="Create password"
           name="password"
           type="password"
           outlined
           dense
         ></v-text-field>
-        <p>
-          <a
-            href="javascript:void(0)"
-            style="color: black; font-size: 12px; margin-left: 70px"
-            >Forgot your password?
-          </a>
-        </p>
-        <v-btn id="btnoturum2" dark elevation="0"> Oturum Aç </v-btn>
-        <span style="font-size: 12px; margin-left: 84px; color: black"
-          >Hesabınız yok mu?</span
-        ><br />
-        <span style="font-size: 12px; margin-left: 20px; color: black"
-          >Bir Camper hesabı oluşturup avantajlardan</span
-        ><br />
-        <span style="font-size: 12px; margin-left: 56px; color: black"
-          >yararlanmaya hemen başlayın.</span
-        ><br />
+        <v-text-field
+          label="Şifreyi doğrulayın"
+          name="password"
+          type="password"
+          outlined
+          dense
+        ></v-text-field>
+        <div style="text-align:center;  color:black; justify-items:center;">
+          <v-checkbox
+            v-model="checkbox"
+          >
+          <p slot="label" style="color:black; font-size:16px; text-align:center;">Kampanyalar ve promosyonlar hakkinda
+             camper tarafindan bilgilendirilmek istiyorum</p>
+          </v-checkbox>
+        </div>
+        <v-btn elevation="0" id="btnhesapolustur">Hesap Oluştur</v-btn>
+          <p  style="text-align:center;" @click.stop="drawer2=false">
+          Zaten bir hesabım var.
+          </p>
       </v-form>
     </v-navigation-drawer>
   </div>
 </template>
 
 <style scoped>
+#btnhesapolustur{
+  color: white;
+  background-color: black;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  text-transform: none;
+  width: 260px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  height: 46px;
+  font-size: 16px;
+}
+
 #btnkayit {
   background-color: white;
   color: black;
@@ -184,7 +205,7 @@
   transition: 0.3s;
 }
 
-#btnkayit:hover {
+#btnkayit:hover{
   color: white;
   background-color: black;
 }
@@ -202,7 +223,8 @@
   transition: 0.3s;
 }
 
-#btnoturum2:hover {
+#btnoturum2:hover,
+#btnhesapolustur:hover {
   color: black;
   background-color: white;
 }
@@ -231,6 +253,7 @@
 }
 #navkayit {
   background-color: white;
+  padding-top:20px ;
 }
 #linksiparis {
   color: black;
