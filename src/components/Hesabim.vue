@@ -2,92 +2,164 @@
 <template>
 <div>
     <v-expand-transition id="expand">
-      <v-card height="auto" width="auto" id="card">
-        <div id="expanddiv">
-          <v-card-text class="boldclass" id="campertext">
-            Camper Hesabım
-          </v-card-text>
-          <v-card-text id="oturumtext">
-            Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
-          </v-card-text>
-        <v-sheet
-        height="400"
-        class="overflow-hidden"
-        style="position: relative;">
-        <v-container class="fill-height">
-      <v-row
-        align="center"
-        justify="center"
-      >
-        <v-btn
-          color="pink"
-          id="btnoturum"
-          dark
-          @click.stop="drawer = !drawer"
-        >
-          OTURUM AÇ
-        </v-btn>
-      </v-row>
-    </v-container>
+        <v-card height="auto" width="auto" id="card">
+            <div id="expanddiv">
+                <v-card-text class="boldclass" id="campertext">
+                  Camper Hesabım
+                </v-card-text>
+                <v-card-text id="oturumtext">
+                  Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
+                </v-card-text>
+              <v-sheet id="sheet">
+                  <v-row
+                    align="center"
+                    justify="center">
+                      <v-btn
+                        color="pink"
+                        id="btnoturum"
+                        dark
+                        @click.stop="drawer = !drawer"
+                        style="margin-top:18px; margin-bottom:18px; margin-left:28px; width:240px"
+                      >
+                      Oturum Aç
+                      </v-btn>
+                  </v-row>
 
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      id="naavv"
-      temporary
-      width="500"
-      height="800"
-    >
-      <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
-        </v-list-item-avatar>
-
-        <v-list-item-content>
-          <v-list-item-title>John Leider</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-divider></v-divider>
-
-      <v-list dense>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-           <v-btn small elevation="4" color="black" id="ot" to="/signin">Oturum Aç</v-btn>
+                  
 
 
-        </v-sheet>
-        <v-card-text> Siparişinizi görmek için </v-card-text>
-          <p>
-            <a
-              href="/"
-              id="linksiparis"
-              class="boldclass"
-              >Siparişleriniz</a
-            >
-          </p>
-        
-        </div>
-      </v-card>
+              </v-sheet>
+              <v-card-text> Siparişinizi görmek için </v-card-text>
+                <p>
+                  <a
+                    href="/"
+                    id="linksiparis"
+                    class="boldclass"
+                    >Siparişleriniz</a
+                  >
+                </p>   
+            </div>
+            <v-navigation-drawer
+                    v-model="drawer"
+                    absolute
+                    id="naavv"
+                    temporary
+                    height=800
+                    width=500
+                    
+                    >
+                    <div style="width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                margin-left:18px">
+                          <div>
+                            <v-img  src="https://www.camper.com/assets-new/my-account-hand.gif" id="gif"></v-img>
+                          </div>
+                          <button style="margin-bottom:70px; margin-left:60px">
+                            <v-icon>mdi-close</v-icon>
+                          </button>
+                    </div>
+                    <span style="font-size:24px; margin-left:24px;">Sizi tekrar görmek güzel</span><br/><br/>
+                    <span style="font-size:14px; margin-left:60px;">Giriş yapmak için oturum açın:</span>
+                    <v-form style="margin-top:20px; padding-left:20px; padding-right:20px">
+                          <v-text-field
+                            label="E-POSTA ADRESİ"
+                            name="email"
+                            type="email"
+                            outlined
+                            dense
+                          ></v-text-field>
+                          <v-text-field
+                            label="Şifre"
+                            name="password"
+                            type="password"
+                            outlined
+                            dense
+                          ></v-text-field>
+                          <p>
+                                <a
+                                href="javascript:void(0)"
+                                style="color:black; font-size:12px; margin-left:70px"
+                                >Forgot your password?
+                                </a>
+                          </p>
+                          <v-btn
+                            id="btnoturum2"
+                            dark
+                            elevation="0"
+                          >
+                          Oturum Aç
+                          </v-btn>
+                          <span style="font-size:12px; margin-left:84px; color:black;">Hesabınız yok mu?</span><br/>
+                          <span style="font-size:12px; margin-left:20px; color:black;">Bir Camper hesabı oluşturup avantajlardan</span><br/>
+                          <span style="font-size:12px; margin-left:56px; color:black;">yararlanmaya hemen başlayın.</span><br/>
+                          <v-btn
+                            id="btnkayit"
+                            elevation="0"
+                          >
+                          Şimdi hesap oluştur
+                          </v-btn>
+                          
+
+                    </v-form>
+            </v-navigation-drawer>
+        </v-card>
     </v-expand-transition>
 </div>
 </template>
 
 <style scoped>
+#btnkayit{
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  text-transform: none;
+  width: 260px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+
+}
+
+#btnkayit:hover{
+  color: white;
+  background-color: black;
+}
+
+#btnoturum2{
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  text-transform: none;
+  width: 260px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+#btnoturum2:hover{
+  color: black;
+  background-color:white ;
+}
+
+#gif{
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#sheet{
+  position:relative; 
+  width:520px;
+
+}
+
 #linksiparis {
   padding-left: 16px;
 }
@@ -98,8 +170,8 @@
 }
 #naavv{
   background-color: white;
-  margin-top: -103px;
-  margin-left: -16px;
+
+
 }
 #linksiparis {
   color: black;
@@ -170,10 +242,7 @@
     data () {
       return {
         drawer: null,
-        items: [
-          { title: 'Home', icon: 'mdi-view-dashboard' },
-          { title: 'About', icon: 'mdi-forum' },
-        ],
+        
       }
     },
   }
