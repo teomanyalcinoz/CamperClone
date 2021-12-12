@@ -179,7 +179,7 @@
   justify-self: right;
   margin-right: -65px;
   background-color: white;
-  width: 300px;
+  width: 360px;
 }
 #dropexpand {
   z-index: 2;

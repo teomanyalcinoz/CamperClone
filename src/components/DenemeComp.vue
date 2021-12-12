@@ -6,9 +6,13 @@
           Camper Hesabım
         </v-card-text>
 
-        <v-card-text id="oturumtext">
-          Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
-        </v-card-text>
+        <p id="oturumtext">
+          Oturum açın ve ayrıcalıklardan 
+        </p>
+
+        <p style="text-align:left; margin-left:16px; margin-bottom:14px;">
+          faydalanmaya başlayın
+        </p>
 
         <v-row align="center" justify="center">
           <v-btn
@@ -21,8 +25,7 @@
               margin-bottom: 18px;
               margin-left: 28px;
               width: 240px;
-            "
-          >
+            ">
             Oturum Aç
           </v-btn>
         </v-row>
@@ -57,17 +60,17 @@
             id="gif"
           ></v-img>
         </div>
-        <button style="margin-bottom: 70px; margin-left: 60px">
+        <button style="margin-bottom: 70px; margin-left: 100px">
           <v-icon>mdi-close</v-icon>
         </button>
       </div>
-      <span style="font-size: 24px; margin-left: 24px"
-        >Sizi tekrar görmek güzel</span
-      ><br /><br />
-      <span style="font-size: 14px; margin-left: 60px"
-        >Giriş yapmak için oturum açın:</span
+      <p style="font-size: 24px; text-align:center; margin-top:20px;"
+        >Sizi tekrar görmek güzel</p
+      ><br />
+      <p style="font-size: 14px; text-align:center;"
+        >Giriş yapmak için oturum açın:</p
       >
-      <v-form style="margin-top: 20px; padding-left: 20px; padding-right: 20px">
+      <v-form style="margin-top: 26px; padding-left: 20px; padding-right: 20px">
         <v-text-field
           label="E-POSTA ADRESİ"
           name="email"
@@ -82,37 +85,35 @@
           outlined
           dense
         ></v-text-field>
-        <p>
+        <p style="text-align:center" @click.stop="drawer3=!drawer3">
           <a
             href="javascript:void(0)"
-            style="color: black; font-size: 12px; margin-left: 70px"
+            style="color: black; font-size: 12px;"
             >Forgot your password?
           </a>
         </p>
-        <v-btn id="btnoturum2" dark elevation="0"> Oturum Aç </v-btn>
-        <span style="font-size: 12px; margin-left: 84px; color: black"
-          >Hesabınız yok mu?</span
-        ><br />
-        <span style="font-size: 12px; margin-left: 20px; color: black"
-          >Bir Camper hesabı oluşturup avantajlardan</span
-        ><br />
-        <span style="font-size: 12px; margin-left: 56px; color: black"
-          >yararlanmaya hemen başlayın.</span
-        ><br />
+        <v-btn id="btnoturum2" dark elevation="0" width="100%" height="44px"> Oturum Aç </v-btn>
+        <p style="text-align:center">
+          Hesabınız yok mu?
+          
+        </p>
+
+        <p style="text-align:center">
+          Bir Camper hesabı oluşturup avantajlardan
+          yararlanmaya hemen başlayın.
+        </p>
 
         <v-row align="center" justify="center"> </v-row>
         <v-btn
           id="btnkayit"
           elevation="0"
           dark
+          height="44px"
           @click.stop="drawer2 = !drawer2"
           style="
             margin-top: 40px;
             margin-bottom: 18px;
-            margin-left: 12px;
-            width: 240px;
-          "
-        >
+            width:100%;">
           Şimdi Hesap Oluştur
         </v-btn>
       </v-form>
@@ -166,16 +167,80 @@
              camper tarafindan bilgilendirilmek istiyorum</p>
           </v-checkbox>
         </div>
-        <v-btn elevation="0" id="btnhesapolustur">Hesap Oluştur</v-btn>
-          <p  style="text-align:center;" @click.stop="drawer2=false">
-          Zaten bir hesabım var.
-          </p>
+
+        <v-btn elevation="0" id="btnhesapolustur" width="100%">Hesap Oluştur</v-btn>
+        <p  style="text-align:center;" @click.stop="drawer2=false">
+        Zaten bir hesabım var.
+        </p>
       </v-form>
+    </v-navigation-drawer>
+
+    <v-navigation-drawer 
+        v-model="drawer3"
+        absolute
+        id="forgotpass"
+        temporary
+        height="800"
+        width="500">
+        <div style="padding:20px; width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-left: 18px;">
+          <p style="text-align:center; font-size:26px">
+            Retrieve your password
+          </p>
+          <button style="padding-bottom:16px; padding-left:18px" @click.stop="drawer3=false">
+             <v-icon>mdi-close</v-icon>
+          </button>
+        </div>
+        <p style="text-align:center; padding-bottom:14px; font-size:15px; color:black">
+          Enter the email address you used to register on Camper.com
+        </p>
+        <p style="text-align:center; padding-bottom:14px; font-size:15px; ">
+          We will send the link to access your account to the same email address.
+        </p>
+        <div style="padding-left:30px; padding-right:30px">
+            <v-text-field
+              label="E-POSTA ADRESİ"
+              name="email"
+              type="email"
+              outlined
+              dense
+              width="100%"
+            ></v-text-field>
+            <v-btn elevation="0" id="btnsifrealin" width="100%">Şifrenizi Yeniden Alın</v-btn>
+        </div>
+        <p style="text-align:center; margin-top:6px;" @click.stop="drawer3=!drawer3">
+          <a
+            href="javascript:void(0)"
+            style="color: black; font-size: 12px;"
+            >Volver
+          </a>
+        </p>
+        
+        
+
+
     </v-navigation-drawer>
   </div>
 </template>
 
 <style scoped>
+#btnsifrealin{
+  background-color: black;
+  color: white;
+  text-transform: none;
+  width: ;
+  border-radius: 0;
+  transition: 0.3s;
+  height: 40px;
+}
+#btnsifrealin:hover{
+  background-color: white;
+  color:black;
+}
+
 #btnhesapolustur{
   color: white;
   background-color: black;
@@ -232,7 +297,7 @@
 #gif {
   width: 100px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 #sheet {
@@ -259,7 +324,10 @@
   color: black;
 }
 #oturumtext {
-  padding-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin-left: 16px;
+  text-align: left;
 }
 
 #campertext {
@@ -324,6 +392,7 @@ export default {
     return {
       drawer: null,
       drawer2: null,
+      drawer3:null,
     };
   },
 };
