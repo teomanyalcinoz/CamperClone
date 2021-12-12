@@ -231,7 +231,7 @@
   background-color: black;
   color: white;
   text-transform: none;
-  width: ;
+  width: 100%;
   border-radius: 0;
   transition: 0.3s;
   height: 40px;
