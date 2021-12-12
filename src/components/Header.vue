@@ -129,10 +129,11 @@ i.v-icon.v-icon {
 #magazabtn {
   position: fixed;
   bottom: 0px;
-  right: 179px;
+  right: 150px;
   background-color:white;
   opacity: 0;
   color: black;
+  width: 100px;
 }
 #kd{
   position: fixed;
