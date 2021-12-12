@@ -16,7 +16,7 @@
               <v-img
                 max-height="600px"
                 max-width="500px"
-                src="https://www.camper.com/assets-new/newsletter-img3.avif"
+                src="https://www.camper.com/img/BLF.webp?d=20211212"
                 class="ml-auto"
               ></v-img>
             </v-col>
