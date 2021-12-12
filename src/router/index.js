@@ -35,6 +35,11 @@ const routes = [
     component: () => import('@/views/Cocuk.vue'),
   },
   {
+    path: "/search",
+    name: "Search",
+    component: () => import('@/views/SearchPage.vue'),
+  },
+  {
     path: "/tws",
     name: "tws",
     component: () => import('@/views/Tws.vue'),

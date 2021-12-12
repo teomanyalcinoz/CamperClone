@@ -49,7 +49,18 @@
       
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <v-toolbar-items id="s" ><v-text-field append-icon="mdi-magnify" label="ARAMA"></v-text-field></v-toolbar-items>
+      <v-toolbar-items id="s" >
+        <v-icon id="iccon">mdi-magnify</v-icon>
+      <v-btn
+        id="sBtn"
+        flat
+        class="buton"
+        x-small
+        to="/search"
+        elevation="10"
+      ></v-btn>
+        <v-text-field  label="ARAMA">
+          </v-text-field></v-toolbar-items>
       <v-toolbar-items>
         
         
@@ -84,16 +95,30 @@
   min-height: 0px;
 
 }
-
+i.v-icon.v-icon {
+  color: black;
+}
+#iccon{
+  position: fixed;
+  margin-top: 5px;
+  margin-left: 180px;
+}
 .buton:hover{
   text-decoration: none;
 }
 .fixedtoolbar {
   position: sticky;
 }
+#sBtn{
+  position: fixed;
+  margin-top: -15px;
+  margin-left: 175px;
+  height: 10px;
+  opacity: 0;
+}
 #s{
   position: fixed;
-  margin-left: 1050px;
+  margin-left: 1040px;
   margin-top: 25px;  
 }
 #magazaaa{
