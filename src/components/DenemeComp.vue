@@ -5,9 +5,11 @@
         <v-card-text class="boldclass" id="campertext">
           Camper Hesabım
         </v-card-text>
+
         <v-card-text id="oturumtext">
           Oturum açın ve ayrıcalıklardan faydalanmaya başlayın
         </v-card-text>
+
         <v-row align="center" justify="center">
           <v-btn
             color="pink"
@@ -25,11 +27,13 @@
           </v-btn>
         </v-row>
       </v-sheet>
+
       <v-card-text> Siparişinizi görmek için </v-card-text>
       <p>
         <a href="/" id="linksiparis" class="boldclass">Siparişleriniz</a>
       </p>
     </div>
+
     <v-navigation-drawer
       v-model="drawer"
       absolute
@@ -95,7 +99,71 @@
         <span style="font-size: 12px; margin-left: 56px; color: black"
           >yararlanmaya hemen başlayın.</span
         ><br />
-        <v-btn id="btnkayit" elevation="0"> Şimdi hesap oluştur </v-btn>
+
+        <v-row align="center" justify="center"> </v-row>
+        <v-btn
+          id="btnkayit"
+          elevation="0"
+          dark
+          @click.stop="drawer2 = !drawer2"
+          style="
+            margin-top: 40px;
+            margin-bottom: 18px;
+            margin-left: 12px;
+            width: 240px;
+          "
+        >
+          Şimdi Hesap Oluştur
+        </v-btn>
+      </v-form>
+    </v-navigation-drawer>
+
+    <v-navigation-drawer
+      v-model="drawer2"
+      absolute
+      id="navkayit"
+      temporary
+      height="800"
+      width="500"
+    >
+      <span style="font-size: 24px; margin-left: 24px"
+        >Sizi tekrar görmek güzel</span
+      ><br /><br />
+      <span style="font-size: 14px; margin-left: 60px"
+        >Giriş yapmak için oturum açın:</span
+      >
+      <v-form style="margin-top: 20px; padding-left: 20px; padding-right: 20px">
+        <v-text-field
+          label="E-POSTA ADRESİ"
+          name="email"
+          type="email"
+          outlined
+          dense
+        ></v-text-field>
+        <v-text-field
+          label="Şifre"
+          name="password"
+          type="password"
+          outlined
+          dense
+        ></v-text-field>
+        <p>
+          <a
+            href="javascript:void(0)"
+            style="color: black; font-size: 12px; margin-left: 70px"
+            >Forgot your password?
+          </a>
+        </p>
+        <v-btn id="btnoturum2" dark elevation="0"> Oturum Aç </v-btn>
+        <span style="font-size: 12px; margin-left: 84px; color: black"
+          >Hesabınız yok mu?</span
+        ><br />
+        <span style="font-size: 12px; margin-left: 20px; color: black"
+          >Bir Camper hesabı oluşturup avantajlardan</span
+        ><br />
+        <span style="font-size: 12px; margin-left: 56px; color: black"
+          >yararlanmaya hemen başlayın.</span
+        ><br />
       </v-form>
     </v-navigation-drawer>
   </div>
@@ -159,6 +227,9 @@
   padding-bottom: 22px;
 }
 #naavv {
+  background-color: white;
+}
+#navkayit {
   background-color: white;
 }
 #linksiparis {
@@ -229,6 +300,7 @@ export default {
   data() {
     return {
       drawer: null,
+      drawer2: null,
     };
   },
 };
