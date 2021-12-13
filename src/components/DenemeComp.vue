@@ -168,7 +168,7 @@
           </v-checkbox>
         </div>
 
-        <v-btn elevation="0" id="btnhesapolustur" width="100%">Hesap Oluştur</v-btn>
+        <v-btn elevation="0" id="btnhesapolustur" width="100px">Hesap Oluştur</v-btn>
         <p  style="text-align:center;" @click.stop="drawer2=false">
         Zaten bir hesabım var.
         </p>
