@@ -1,5 +1,35 @@
 <template>
   <v-row id="row">
+    <v-col id="teix" class="d-flex child-flex kolon" cols="12" sm="12">
+      <v-card>
+        <Car2 id="karosel"></Car2>
+      </v-card>
+    </v-col>
+
+    <v-col id="ggg" class="d-flex child-flex kolon" sm="12" cols="12">
+      <v-card>
+        <v-img
+          :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/cf40e2b2-c2ac-47e0-99d7-750b0c01c3a7/T93-W45-GIFT-DIST_Desktop.avif={}`"
+          aspect-ratio="2"
+          class="images"
+        >
+          <div class="itemsdiv">
+            <span class="giffspan">Gift Guide<br /> </span>
+            <span class="lilspan"> En Mükemmel Hediyeyi Bulun<br /> </span>
+          </div>
+          <div>
+            <v-btn depressed elevation="2" floating class="butonlar" id="btn7"
+              >Kadın</v-btn
+            ><v-btn depressed elevation="2" floating class="butonlar" id="btn8"
+              >Erkek</v-btn
+            ><v-btn depressed elevation="2" floating class="butonlar" id="btn9"
+              >Çocuk</v-btn
+            >
+          </div>
+        </v-img>
+      </v-card>
+    </v-col>
+
     <v-col class="d-flex child-flex kolon" cols="12" sm="12">
       <v-card>
         <v-img
@@ -121,7 +151,8 @@
 #row {
   z-index: 0;
 }
-#ewew{
+
+#ewew {
   margin-top: -295px;
 }
 #text {
@@ -136,7 +167,10 @@
 .lilspan {
   color: white;
   font-size: 30px;
-  margin-right: 550px;
+  margin-right: 800px;
+}
+#ggg {
+  margin-top: -275px;
 }
 .peuspan {
   color: white;
@@ -157,7 +191,7 @@
 .giffspan {
   color: white;
   font-size: 70px;
-  margin-right: 720px;
+  margin-right: 790px;
 }
 .colspan {
   color: white;
@@ -207,6 +241,33 @@
 #btn5 {
   margin-right: 650px;
 }
+#btn7 {
+  margin-top: 20px;
+  margin-right: 900px;
+  width: 20px;
+  border-radius: 0;
+  text-transform: none;
+  height: 40px;
+  transition: 0.2s;
+}
+#btn8 {
+  margin-top: -70px;
+  margin-right: 680px;
+  width: 20px;
+  border-radius: 0;
+  text-transform: none;
+  height: 40px;
+  transition: 0.2s;
+}
+#btn9 {
+  margin-top: -110px;
+  margin-right: 470px;
+  width: 20px;
+  border-radius: 0;
+  text-transform: none;
+  height: 40px;
+  transition: 0.2s;
+}
 #btnKadın {
   margin-right: 50px;
   width: 150px;
@@ -223,10 +284,12 @@
 
 <script>
 import Carousel from "../components/CarouselHome.vue";
+import Car2 from "../components/CarouselTeix.vue";
 export default {
   name: "main",
   components: {
     Carousel,
+    Car2,
   },
   data() {
     return {};

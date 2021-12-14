@@ -13,11 +13,12 @@
             height="100%"
           >
             <div id="karstDiv">
-              <v-text id="karst">KARST</v-text>
+              <v-text id="karst">TEIX</v-text>
               <br />
-              <v-text id="karst2">Doğanın Gücü</v-text>
+              <v-text id="karst2">Şehrin Outdoor Tarzı</v-text>
               <br />
-              <v-btn id="karstBtn" elevation="0">Koleksiyonu Keşfet</v-btn>
+              <v-btn id="karstBtn1" elevation="0">Kadın</v-btn>
+              <v-btn id="karstBtn2" elevation="0">Erkek</v-btn>
             </div>
           </v-carousel-item>
         </v-carousel>
@@ -35,10 +36,19 @@
   margin-top: 200px;
   margin-left: 700px;
 }
-#karstBtn {
+#karstBtn1 {
   margin-top: 20px;
-  margin-left: -35px;
-  width: 200px;
+  margin-left: -15px;
+  width: 20px;
+  border-radius: 0;
+  text-transform: none;
+  height: 40px;
+  transition: 0.2s;
+}
+#karstBtn2 {
+  margin-top: 20px;
+  margin-left: 55px;
+  width: 20px;
   border-radius: 0;
   text-transform: none;
   height: 40px;
@@ -50,13 +60,13 @@
 }
 #karst {
   color: white;
-  margin-left: -10px;
+  margin-left: 30px;
   font-size: 45px;
   font-weight: bold;
 }
 #karst2 {
   color: white;
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 15px;
   font-weight: bold;
 }
@@ -68,16 +78,16 @@ export default {
     return {
       items: [
         {
-          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/64b7baa0-c499-434a-ad0d-654dea346d57/T93-KARTS-Women-Desktop.avif",
+          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/d8ef2090-3810-4fbf-8edc-9ffceff15141/W44-Teix-1-Women-desktop.avif",
         },
         {
-          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/254e7f44-acef-412a-a8b8-2ef999fd41bb/Banners-T93-W41-Women-Desktop.avif",
+          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/e421d965-68a9-4942-8172-160056f1c58d/T93-W44-Teix_Desktop.avif",
         },
         {
-          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/e2c76254-2444-47f3-97f6-e6bcba0a4e1c/Banners-T93-W41-Men-Desktop.avif",
+          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/e3754c13-8165-4d43-bb35-e2cf19366bd2/W44-Teix-Men-1-desktop.avif",
         },
         {
-          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/77e13471-8ae1-4e65-ba02-cf9bee9694b4/T93-KARST-Men-Desktop.avif",
+          src: "https://www.camper.com/cms/api/assets/tiers-banners-homes/6bfa762a-9dde-4820-a19b-e5b0695685e5/W44-Teix-Men-2-desktop.avif",
         },
       ],
     };
