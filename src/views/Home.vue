@@ -13,7 +13,7 @@
           aspect-ratio="2"
           class="images"
         >
-          <div class="itemsdiv">
+          <div id="itemsdiv2">
             <span class="giffspan">Gift Guide<br /> </span>
             <span class="lilspan"> En Mükemmel Hediyeyi Bulun<br /> </span>
           </div>
@@ -167,7 +167,10 @@
 .lilspan {
   color: white;
   font-size: 30px;
-  margin-right: 800px;
+  margin-left: -500px;
+}
+#itemsdiv2 {
+  text-align: center;
 }
 #ggg {
   margin-top: -275px;
@@ -191,7 +194,7 @@
 .giffspan {
   color: white;
   font-size: 70px;
-  margin-right: 790px;
+  margin-left: -500px;
 }
 .colspan {
   color: white;
@@ -244,7 +247,7 @@
 #btn7 {
   margin-top: 20px;
   margin-right: 900px;
-  width: 20px;
+  width: 150px;
   border-radius: 0;
   text-transform: none;
   height: 40px;
@@ -252,17 +255,17 @@
 }
 #btn8 {
   margin-top: -70px;
-  margin-right: 680px;
-  width: 20px;
+  margin-right: 180px;
+  width: 150px;
   border-radius: 0;
   text-transform: none;
   height: 40px;
   transition: 0.2s;
 }
 #btn9 {
-  margin-top: -110px;
-  margin-right: 470px;
-  width: 20px;
+  margin-top: -70px;
+  margin-right: 200px;
+  width: 150px;
   border-radius: 0;
   text-transform: none;
   height: 40px;

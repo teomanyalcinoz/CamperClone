@@ -2,7 +2,7 @@
   <div>
     <v-app id="vapp">
       <v-card>
-        <v-carousel height="600" cycle>
+        <v-carousel height="600" :show-arrows="false" hide-delimiters cycle>
           <v-carousel-item
             v-for="(item, i) in items"
             :key="i"
@@ -17,8 +17,8 @@
               <br />
               <v-text id="karst2">Şehrin Outdoor Tarzı</v-text>
               <br />
-              <v-btn id="karstBtn1" elevation="0">Kadın</v-btn>
-              <v-btn id="karstBtn2" elevation="0">Erkek</v-btn>
+              <v-btn id="kadınbtn" to="/kadın" elevation="0">Kadın</v-btn>
+              <v-btn id="erkekbtn" to="/erkek" elevation="0">Erkek</v-btn>
             </div>
           </v-carousel-item>
         </v-carousel>
@@ -62,7 +62,26 @@
   color: white;
   margin-left: 30px;
   font-size: 45px;
+  width: 50px;
   font-weight: bold;
+}
+#kadınbtn {
+  margin-top: 20px;
+  margin-left: -80px;
+  border-radius: 0;
+  text-transform: none;
+  height: 40px;
+  width: 150px;
+  transition: 0.2s;
+}
+#erkekbtn {
+  margin-top: 20px;
+  margin-left: 10px;
+  border-radius: 0;
+  text-transform: none;
+  height: 40px;
+  width: 150px;
+  transition: 0.2s;
 }
 #karst2 {
   color: white;
