@@ -6,43 +6,36 @@
       </v-card>
     </v-col>
 
-    <v-col id="ggg" class="d-flex child-flex kolon" sm="12" cols="12">
+    <v-col id="ggg" class="d-flex child-flex kolon" sm="12" cols="12" style="padding:0px">
       <v-card>
         <v-img
           :src="`https://www.camper.com/cms/api/assets/tiers-banners-homes/cf40e2b2-c2ac-47e0-99d7-750b0c01c3a7/T93-W45-GIFT-DIST_Desktop.avif={}`"
           aspect-ratio="2"
           class="images"
         >
-          <div id="itemsdiv2">
-            <span class="giffspan">Gift Guide<br /> </span>
-            <span class="lilspan"> En Mükemmel Hediyeyi Bulun<br /> </span>
-          </div>
-          <div>
-            <v-btn
-              depressed
-              elevation="2"
-              to="/gift"
-              floating
-              class="butonlar"
-              id="btn7"
-              >Kadın</v-btn
-            ><v-btn
-              depressed
-              elevation="2"
-              to="/gift"
-              floating
-              class="butonlar"
-              id="btn8"
-              >Erkek</v-btn
-            ><v-btn
-              depressed
-              elevation="2"
-              to="/gift"
-              floating
-              class="butonlar"
-              id="btn9"
-              >Çocuk</v-btn
-            >
+          <div style="margin-left:-250px">
+              <div id="itemsdiv2">
+                <span class="giffspan">Gift Guide<br /> </span>
+                <span class="lilspan"> En Mükemmel Hediyeyi Bulun<br /> </span>
+              </div>
+              <div style="display:flex; margin-top:20px; margin-left:30px;" >
+                <v-btn
+                  to="/gift"
+                  class="butonlar"
+                  id="btn7"
+                  >Kadın</v-btn
+                ><v-btn
+                  to="/gift"
+                  class="butonlar"
+                  id="btn8"
+                  >Erkek</v-btn
+                ><v-btn
+                  to="/gift"
+                  class="butonlar"
+                  id="btn9"
+                  >Çocuk</v-btn
+                >
+              </div>
           </div>
         </v-img>
       </v-card>
@@ -263,26 +256,22 @@
   margin-right: 650px;
 }
 #btn7 {
-  margin-top: 20px;
-  margin-right: 900px;
   width: 150px;
   border-radius: 0;
   text-transform: none;
   height: 40px;
   transition: 0.2s;
+  margin-right: 10px;
 }
 #btn8 {
-  margin-top: -70px;
-  margin-right: 180px;
   width: 150px;
   border-radius: 0;
   text-transform: none;
   height: 40px;
   transition: 0.2s;
+  margin-right: 10px;
 }
 #btn9 {
-  margin-top: -70px;
-  margin-right: 200px;
   width: 150px;
   border-radius: 0;
   text-transform: none;
