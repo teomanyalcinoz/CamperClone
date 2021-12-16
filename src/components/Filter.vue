@@ -5,7 +5,7 @@
       <v-col>
         <v-btn id="filtre">
           <v-icon>mdi-filter</v-icon>
-          Filtre
+          Filtre Kahve
         </v-btn></v-col
       >
 
