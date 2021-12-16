@@ -18,11 +18,29 @@
             <span class="lilspan"> En Mükemmel Hediyeyi Bulun<br /> </span>
           </div>
           <div>
-            <v-btn depressed elevation="2" floating class="butonlar" id="btn7"
+            <v-btn
+              depressed
+              elevation="2"
+              to="/gift"
+              floating
+              class="butonlar"
+              id="btn7"
               >Kadın</v-btn
-            ><v-btn depressed elevation="2" floating class="butonlar" id="btn8"
+            ><v-btn
+              depressed
+              elevation="2"
+              to="/gift"
+              floating
+              class="butonlar"
+              id="btn8"
               >Erkek</v-btn
-            ><v-btn depressed elevation="2" floating class="butonlar" id="btn9"
+            ><v-btn
+              depressed
+              elevation="2"
+              to="/gift"
+              floating
+              class="butonlar"
+              id="btn9"
               >Çocuk</v-btn
             >
           </div>
