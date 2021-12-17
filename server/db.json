@@ -1,0 +1,75 @@
+[
+  {
+    "itemskadin": [
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/d8ef2090-3810-4fbf-8edc-9ffceff15141/W44-Teix-1-Women-desktop.avif"
+      },
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/e421d965-68a9-4942-8172-160056f1c58d/T93-W44-Teix_Desktop.avif"
+      },
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/e3754c13-8165-4d43-bb35-e2cf19366bd2/W44-Teix-Men-1-desktop.avif"
+      },
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/6bfa762a-9dde-4820-a19b-e5b0695685e5/W44-Teix-Men-2-desktop.avif"
+      },
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/cf40e2b2-c2ac-47e0-99d7-750b0c01c3a7/T93-W45-GIFT-DIST_Desktop.avif"
+      },
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/2429b0c7-0187-4d37-b5e4-ef9d3293b1ae/T93-Gender-Walden-Women-desktop.avif"
+      },
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/7cf1e10a-0c2f-4505-9835-c52f97182916/T93-Gender-Walden-Men-desktop.avif"
+      },
+      {
+        "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/c565ea73-9386-4b44-bd51-8389176cde27/T93_Store-locator-Dist-desktop.avif"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K800319-001_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K800319-001_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K800319-001_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K800319-001_LF.webp"
+      },
+      {
+        "content": {
+          "id": 2,
+          "description": "Vizon Kapüşonlu Büzgü Detaylı Pardösü",
+          "count": 1,
+          "size": "M",
+          "color": "Vizon",
+          "colorCode": "#414744",
+          "price": 2399
+        },
+        "image": "https://img-network.mncdn.com/productimages/2400406202424_1_100_154.jpg"
+      }
+    ],
+    "Cart": {
+      "id": 1,
+      "items": [
+        {
+          "content": {
+            "id": 1,
+            "description": "Vizon Kapüşonlu Büzgü Detaylı Pardösü",
+            "count": 2,
+            "size": "M",
+            "color": "Vizon",
+            "colorCode": "#414744",
+            "price": 2399,
+            "totalPrice": 4698
+          },
+          "image": "https://img-network.mncdn.com/productimages/2400406202424_1_100_154.jpg"
+        }
+      ],
+      "total": 4798,
+      "shipping": 30,
+      "discount": 20
+    }
+  }
+]
