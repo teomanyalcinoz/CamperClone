@@ -7,8 +7,7 @@
       <v-col
         v-for="(item, index) in this.$store.state.itemskadin"
         :key="index"
-        cols="6"
-        md="auto"
+        cols="3"
       >
         <v-img :src="item.image" aspect-ratio="1" class="grey lighten-2">
           <template v-slot:placeholder>
