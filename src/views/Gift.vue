@@ -16,7 +16,11 @@
             :src="`https://i2.milimaj.com/i/milliyet/75/0x0/5fe33fab5542821c70da8831.jpg`"
             height="600px"
             width="500px"
-          ></v-img>
+          >
+          <button small elevation="0" class="giftbtn" to="/kadın">
+                Kadın
+              </button>
+          </v-img>
         </v-card>
       </v-flex>
       <v-flex xs12 md3>
@@ -71,7 +75,12 @@
             :src="`https://i2.milimaj.com/i/milliyet/75/0x0/5fe33fab5542821c70da8831.jpg`"
             height="600px"
             width="500px"
-          ></v-img>
+          >
+              <button small elevation="0" class="giftbtn" to="/erkek">
+                Erkek
+              </button>
+          
+          </v-img>
         </v-card>
       </v-flex>
       <v-flex xs12 md3>
@@ -126,7 +135,10 @@
             :src="`https://i2.milimaj.com/i/milliyet/75/0x0/5fe33fab5542821c70da8831.jpg`"
             height="600px"
             width="500px"
-          ></v-img>
+          >
+                <button small elevation="0" class="giftbtn" action="/cocuk">Çocuk</button>
+          
+          </v-img>
         </v-card>
       </v-flex>
       <v-flex xs12 md3>
@@ -177,6 +189,14 @@
 </template>
 
 <style scoped>
+.giftbtn{
+  margin-top: 300px;
+  margin-left:-26px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
+
 #dahafazla {
   width: 100px;
   background-color: black;
