@@ -43,20 +43,9 @@ import Filt from "../components/Filter.vue";
 export default {
   beforeCreate() {
     this.$store.dispatch("fetchItemsForKadin");
-    console.log("İNİT  ");
   },
-  data: {},
   components: {
     Filt,
-  },
-  methods: {
-    test2() {
-      console.log(
-        "-----------------------------------------------------------------"
-      );
-      console.log(this.$store.state);
-      return this.$store.getters.itemskadin;
-    },
   },
   name: "kadın",
 };

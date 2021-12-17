@@ -44,8 +44,36 @@ app.get("/api/itemskadin", (req, res) => {
         "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K200828-023_L.webp"
       },
       {
-        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K200828-022_L.webp"
-      }]
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K200828-022_L.webp" //
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K400325-011_L.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K400325-004_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K400325-015_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K400325-016_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K400325-020_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K400600-001_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K201161-011_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K201161-008_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K201236-001_LF.webp"
+      },
+    ]
   });
 });
 
@@ -102,7 +130,29 @@ app.get("/api/itemserkek", (req, res) => {
       },
       {
         "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300005-022_LF.webp"
-      }]
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300245-013_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300409-001_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300412-001_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300412-003_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300419-001_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300419-002_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K300420-002_LF.webp"
+      },
+    ]
   });
 });
 
@@ -138,8 +188,27 @@ app.get("/api/itemscocuk", (req, res) => {
         "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K800316-001_L.webp"
       },
       {
-        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K800319-001_LF.webp"
-      }]
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K800319-001_LF.webp" //
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K800360-002_L.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K900131-013_L.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K800368-001_L.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/K800368-002_L.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K900282-004_LF.webp"
+      },
+      {
+        "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNuYmlnZ3JleSQ=/80153-080_L.webp"
+      },
+    ]
   });
 });
 

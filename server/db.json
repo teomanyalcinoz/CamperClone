@@ -1,6 +1,6 @@
 [
   {
-    "itemskadin": [
+    "itemshome": [
       {
         "image": "https://www.camper.com/cms/api/assets/tiers-banners-homes/d8ef2090-3810-4fbf-8edc-9ffceff15141/W44-Teix-1-Women-desktop.avif"
       },
@@ -36,40 +36,7 @@
       },
       {
         "image": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K800319-001_LF.webp"
-      },
-      {
-        "content": {
-          "id": 2,
-          "description": "Vizon Kapüşonlu Büzgü Detaylı Pardösü",
-          "count": 1,
-          "size": "M",
-          "color": "Vizon",
-          "colorCode": "#414744",
-          "price": 2399
-        },
-        "image": "https://img-network.mncdn.com/productimages/2400406202424_1_100_154.jpg"
       }
-    ],
-    "Cart": {
-      "id": 1,
-      "items": [
-        {
-          "content": {
-            "id": 1,
-            "description": "Vizon Kapüşonlu Büzgü Detaylı Pardösü",
-            "count": 2,
-            "size": "M",
-            "color": "Vizon",
-            "colorCode": "#414744",
-            "price": 2399,
-            "totalPrice": 4698
-          },
-          "image": "https://img-network.mncdn.com/productimages/2400406202424_1_100_154.jpg"
-        }
-      ],
-      "total": 4798,
-      "shipping": 30,
-      "discount": 20
-    }
+    ]
   }
 ]
