@@ -6,11 +6,9 @@
           Camper Hesabım
         </v-card-text>
 
-        <p id="oturumtext">
-          Oturum açın ve ayrıcalıklardan 
-        </p>
+        <p id="oturumtext">Oturum açın ve ayrıcalıklardan</p>
 
-        <p style="text-align:left; margin-left:16px; margin-bottom:14px;">
+        <p style="text-align: left; margin-left: 16px; margin-bottom: 14px">
           faydalanmaya başlayın
         </p>
 
@@ -25,7 +23,8 @@
               margin-bottom: 18px;
               margin-left: 28px;
               width: 240px;
-            ">
+            "
+          >
             Oturum Aç
           </v-btn>
         </v-row>
@@ -64,17 +63,19 @@
           <v-icon>mdi-close</v-icon>
         </button>
       </div>
-      <p style="font-size: 24px; text-align:center; margin-top:20px;"
-        >Sizi tekrar görmek güzel</p
-      ><br />
-      <p style="font-size: 14px; text-align:center;"
-        >Giriş yapmak için oturum açın:</p
-      >
+      <p style="font-size: 24px; text-align: center; margin-top: 20px">
+        Sizi tekrar görmek güzel
+      </p>
+      <br />
+      <p style="font-size: 14px; text-align: center">
+        Giriş yapmak için oturum açın:
+      </p>
       <v-form style="margin-top: 26px; padding-left: 20px; padding-right: 20px">
         <v-text-field
           label="E-POSTA ADRESİ"
           name="email"
           type="email"
+          v-model="email2"
           outlined
           dense
         ></v-text-field>
@@ -82,25 +83,29 @@
           label="Şifre"
           name="password"
           type="password"
+          v-model="password2"
           outlined
           dense
         ></v-text-field>
-        <p style="text-align:center" @click.stop="drawer3=!drawer3">
-          <a
-            href="javascript:void(0)"
-            style="color: black; font-size: 12px;"
+        <p style="text-align: center" @click.stop="drawer3 = !drawer3">
+          <a href="javascript:void(0)" style="color: black; font-size: 12px"
             >Forgot your password?
           </a>
         </p>
-        <v-btn id="btnoturum2" dark elevation="0" width="100%" height="44px"> Oturum Aç </v-btn>
-        <p style="text-align:center">
-          Hesabınız yok mu?
-          
-        </p>
+        <v-btn
+          id="btnoturum2"
+          dark
+          elevation="0"
+          width="100%"
+          height="44px"
+          @click="signin()"
+        >
+          Oturum Aç
+        </v-btn>
+        <p style="text-align: center">Hesabınız yok mu?</p>
 
-        <p style="text-align:center">
-          Bir Camper hesabı oluşturup avantajlardan
-          yararlanmaya hemen başlayın.
+        <p style="text-align: center">
+          Bir Camper hesabı oluşturup avantajlardan yararlanmaya hemen başlayın.
         </p>
 
         <v-row align="center" justify="center"> </v-row>
@@ -110,10 +115,8 @@
           dark
           height="44px"
           @click.stop="drawer2 = !drawer2"
-          style="
-            margin-top: 40px;
-            margin-bottom: 18px;
-            width:100%;">
+          style="margin-top: 40px; margin-bottom: 18px; width: 100%"
+        >
           Şimdi Hesap Oluştur
         </v-btn>
       </v-form>
@@ -127,14 +130,16 @@
       height="800"
       width="500"
     >
-      <div style="text-align:center; padding:5px">
-      <span style="font-size: 24px; margin-left: 24px;"
-        >Camper Hesabım</span
-      >
+      <div style="text-align: center; padding: 5px">
+        <span style="font-size: 24px; margin-left: 24px">Camper Hesabım</span>
       </div>
-      <div width="200px" style="display:flex; padding:10px; text-align: center;">
-        <span style="font-size: 14px;"
-        >Camper hesabınızın avantajlarından faydalanmak için e-posta adresinizle ilişkili bir şifre oluşturmanız yeterlidir.
+      <div
+        width="200px"
+        style="display: flex; padding: 10px; text-align: center"
+      >
+        <span style="font-size: 14px"
+          >Camper hesabınızın avantajlarından faydalanmak için e-posta
+          adresinizle ilişkili bir şifre oluşturmanız yeterlidir.
         </span>
       </div>
       <v-form style="margin-top: 20px; padding-left: 20px; padding-right: 20px">
@@ -142,6 +147,7 @@
           label="E-POSTA ADRESİ"
           name="email"
           type="email"
+          v-model="email"
           outlined
           dense
         ></v-text-field>
@@ -149,6 +155,7 @@
           label="Create password"
           name="password"
           type="password"
+          v-model="password"
           outlined
           dense
         ></v-text-field>
@@ -159,75 +166,95 @@
           outlined
           dense
         ></v-text-field>
-        <div style="text-align:center;  color:black; justify-items:center;">
-          <v-checkbox
-            v-model="checkbox"
-          >
-          <p slot="label" style="color:black; font-size:16px; text-align:center;">Kampanyalar ve promosyonlar hakkinda
-             camper tarafindan bilgilendirilmek istiyorum</p>
+        <div style="text-align: center; color: black; justify-items: center">
+          <v-checkbox v-model="checkbox">
+            <p
+              slot="label"
+              style="color: black; font-size: 16px; text-align: center"
+            >
+              Kampanyalar ve promosyonlar hakkinda camper tarafindan
+              bilgilendirilmek istiyorum
+            </p>
           </v-checkbox>
         </div>
 
-        <v-btn elevation="0" id="btnhesapolustur" width="100%">Hesap Oluştur</v-btn>
-        <p  style="text-align:center;" @click.stop="drawer2=false">
-        Zaten bir hesabım var.
+        <v-btn elevation="0" id="btnhesapolustur" width="100%" @click="signup()"
+          >Hesap Oluştur</v-btn
+        >
+        <p style="text-align: center" @click.stop="drawer2 = false">
+          Zaten bir hesabım var.
         </p>
       </v-form>
     </v-navigation-drawer>
 
-    <v-navigation-drawer 
-        v-model="drawer3"
-        absolute
-        id="forgotpass"
-        temporary
-        height="800"
-        width="500">
-        <div style="padding:20px; width: 100%;
+    <v-navigation-drawer
+      v-model="drawer3"
+      absolute
+      id="forgotpass"
+      temporary
+      height="800"
+      width="500"
+    >
+      <div
+        style="
+          padding: 20px;
+          width: 100%;
           display: flex;
           flex-direction: row;
           justify-content: center;
-          margin-left: 18px;">
-          <p style="text-align:center; font-size:26px">
-            Retrieve your password
-          </p>
-          <button style="padding-bottom:16px; padding-left:18px" @click.stop="drawer3=false">
-             <v-icon>mdi-close</v-icon>
-          </button>
-        </div>
-        <p style="text-align:center; padding-bottom:14px; font-size:15px; color:black">
-          Enter the email address you used to register on Camper.com
+          margin-left: 18px;
+        "
+      >
+        <p style="text-align: center; font-size: 26px">
+          Retrieve your password
         </p>
-        <p style="text-align:center; padding-bottom:14px; font-size:15px; ">
-          We will send the link to access your account to the same email address.
-        </p>
-        <div style="padding-left:30px; padding-right:30px">
-            <v-text-field
-              label="E-POSTA ADRESİ"
-              name="email"
-              type="email"
-              outlined
-              dense
-              width="100%"
-            ></v-text-field>
-            <v-btn elevation="0" id="btnsifrealin" width="100%">Şifrenizi Yeniden Alın</v-btn>
-        </div>
-        <p style="text-align:center; margin-top:6px;" @click.stop="drawer3=!drawer3">
-          <a
-            href="javascript:void(0)"
-            style="color: black; font-size: 12px;"
-            >Volver
-          </a>
-        </p>
-        
-        
-
-
+        <button
+          style="padding-bottom: 16px; padding-left: 18px"
+          @click.stop="drawer3 = false"
+        >
+          <v-icon>mdi-close</v-icon>
+        </button>
+      </div>
+      <p
+        style="
+          text-align: center;
+          padding-bottom: 14px;
+          font-size: 15px;
+          color: black;
+        "
+      >
+        Enter the email address you used to register on Camper.com
+      </p>
+      <p style="text-align: center; padding-bottom: 14px; font-size: 15px">
+        We will send the link to access your account to the same email address.
+      </p>
+      <div style="padding-left: 30px; padding-right: 30px">
+        <v-text-field
+          label="E-POSTA ADRESİ"
+          name="email"
+          type="email"
+          outlined
+          dense
+          width="100%"
+        ></v-text-field>
+        <v-btn elevation="0" id="btnsifrealin" width="100%"
+          >Şifrenizi Yeniden Alın</v-btn
+        >
+      </div>
+      <p
+        style="text-align: center; margin-top: 6px"
+        @click.stop="drawer3 = !drawer3"
+      >
+        <a href="javascript:void(0)" style="color: black; font-size: 12px"
+          >Volver
+        </a>
+      </p>
     </v-navigation-drawer>
   </div>
 </template>
 
 <style scoped>
-#btnsifrealin{
+#btnsifrealin {
   background-color: black;
   color: white;
   text-transform: none;
@@ -236,12 +263,12 @@
   transition: 0.3s;
   height: 40px;
 }
-#btnsifrealin:hover{
+#btnsifrealin:hover {
   background-color: white;
-  color:black;
+  color: black;
 }
 
-#btnhesapolustur{
+#btnhesapolustur {
   color: white;
   background-color: black;
   border-radius: 0;
@@ -270,7 +297,7 @@
   transition: 0.3s;
 }
 
-#btnkayit:hover{
+#btnkayit:hover {
   color: white;
   background-color: black;
 }
@@ -318,7 +345,7 @@
 }
 #navkayit {
   background-color: white;
-  padding-top:20px ;
+  padding-top: 20px;
 }
 #linksiparis {
   color: black;
@@ -387,13 +414,46 @@
 </style>
 
 <script>
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 export default {
   data() {
     return {
+      email: "",
+      password: "",
+      email2: "",
+      password2: "",
       drawer: null,
       drawer2: null,
-      drawer3:null,
+      drawer3: null,
     };
+  },
+  methods: {
+    signup: function () {
+      const auth = getAuth();
+      createUserWithEmailAndPassword(auth, this.email, this.password).then(
+        (user) => {
+          alert(`${user.email} icin hesap olusturdun!!!!`);
+        },
+        (err) => {
+          alert(err);
+        }
+      );
+    },
+    signin: function () {
+      const auth = getAuth();
+      signInWithEmailAndPassword(auth, this.email2, this.password2).then(
+        (user) => {
+          alert(`${user.email2} icin giris yapildi!!!!`);
+        },
+        (err) => {
+          alert(err);
+        }
+      );
+    },
   },
 };
 </script>
