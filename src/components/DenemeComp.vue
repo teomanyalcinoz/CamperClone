@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="expanddiv">
+    <div v-if="!isLoggedIn" id="expanddiv">
       <v-sheet id="sheet">
         <v-card-text class="boldclass" id="campertext">
           Camper Hesabım
@@ -34,6 +34,43 @@
       <p>
         <a href="/" id="linksiparis" class="boldclass">Siparişleriniz</a>
       </p>
+    </div>
+
+    <div v-if="isLoggedIn" id="signindiv">
+      <v-sheet id="sheet">
+        <v-card-text
+          class="boldclass"
+          id="campertext"
+          style="font-weight: 1500"
+        >
+          Merhaba
+        </v-card-text>
+        <v-divider></v-divider>
+      </v-sheet>
+      <div>
+        <div>
+          <span style="font-weight: bold">Hesabım</span>
+        </div>
+        <div>
+          <span style="font-weight: bold">Siparişlerim & İadelerim</span>
+        </div>
+        <div>
+          <span style="font-weight: bold">Wishlist</span>
+        </div>
+        <div>
+          <span style="font-weight: bold">Profil</span>
+        </div>
+        <v-divider></v-divider>
+        <v-btn
+          @click="logout()"
+          class="ma-2"
+          color="red"
+          dark
+          style="margin-left: 260px"
+        >
+          <v-icon dark right> mdi-logout </v-icon>
+        </v-btn>
+      </div>
     </div>
 
     <v-navigation-drawer
@@ -340,6 +377,10 @@
   padding-left: 16px;
   padding-bottom: 22px;
 }
+#signindiv {
+  padding-left: 16px;
+  padding-bottom: 22px;
+}
 #naavv {
   background-color: white;
 }
@@ -418,6 +459,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signOut,
 } from "firebase/auth";
 export default {
   data() {
@@ -429,6 +471,8 @@ export default {
       drawer: null,
       drawer2: null,
       drawer3: null,
+      isLoggedIn: false,
+      currentUser: false,
     };
   },
   methods: {
@@ -437,6 +481,7 @@ export default {
       createUserWithEmailAndPassword(auth, this.email, this.password).then(
         (user) => {
           alert(`${user.email} icin hesap olusturdun!!!!`);
+          this.$router.push("/");
         },
         (err) => {
           alert(err);
@@ -448,12 +493,28 @@ export default {
       signInWithEmailAndPassword(auth, this.email2, this.password2).then(
         (user) => {
           alert(`${user.email2} icin giris yapildi!!!!`);
+          this.isLoggedIn = true;
+          this.$router.push("/");
         },
         (err) => {
           alert(err);
         }
       );
     },
+    logout: function () {
+      const auth = getAuth();
+      signOut(auth, this.email2, this.password2).then(() => {
+        this.$router.push("/");
+        this.isLoggedIn = false;
+        alert("BASARIYLA CİKİS YAPTİN");
+      });
+    },
+  },
+  created() {
+    if (firebase.auth().currentUser) {
+      this.isLoggedIn = true;
+      this.currentUser = firebase.auth().currentUser.email;
+    }
   },
 };
 </script>
