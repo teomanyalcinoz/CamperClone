@@ -44,7 +44,8 @@
           style="font-weight: 1500"
         >
           Merhaba
-        </v-card-text>
+        </v-card-text><br/>
+        <span id="app">{{email2}}</span>
         <v-divider></v-divider>
       </v-sheet>
       <div>
@@ -462,6 +463,7 @@ import {
   signOut,
 } from "firebase/auth";
 export default {
+  el: '#app',
   data() {
     return {
       email: "",
@@ -480,7 +482,7 @@ export default {
       const auth = getAuth();
       createUserWithEmailAndPassword(auth, this.email, this.password).then(
         (user) => {
-          alert(`${user.email} icin hesap olusturdun!!!!`);
+          alert(`${this.email} icin hesap olusturdun!!!!`);
           this.$router.push("/");
         },
         (err) => {
@@ -492,7 +494,7 @@ export default {
       const auth = getAuth();
       signInWithEmailAndPassword(auth, this.email2, this.password2).then(
         (user) => {
-          alert(`${user.email2} icin giris yapildi!!!!`);
+          alert(`${this.email2} icin giris yapildi!!!!`);
           this.isLoggedIn = true;
           this.$router.push("/");
         },
