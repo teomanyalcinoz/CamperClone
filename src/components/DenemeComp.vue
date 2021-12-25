@@ -37,41 +37,33 @@
     </div>
 
     <div v-if="isLoggedIn" id="signindiv">
-      <v-sheet id="sheet">
-        <v-card-text
-          class="boldclass"
-          id="campertext"
-          style="font-weight: 1500"
-        >
-          Merhaba
-        </v-card-text><br/>
-        <span id="app">{{email2}}</span>
-        <v-divider></v-divider>
-      </v-sheet>
-      <div>
-        <div>
-          <span style="font-weight: bold">Hesabım</span>
-        </div>
-        <div>
-          <span style="font-weight: bold">Siparişlerim & İadelerim</span>
-        </div>
-        <div>
-          <span style="font-weight: bold">Wishlist</span>
-        </div>
-        <div>
-          <span style="font-weight: bold">Profil</span>
-        </div>
-        <v-divider></v-divider>
-        <v-btn
-          @click="logout()"
-          class="ma-2"
-          color="red"
-          dark
-          style="margin-left: 260px"
-        >
-          <v-icon dark right> mdi-logout </v-icon>
-        </v-btn>
-      </div>
+        <v-sheet id="sheet">
+          <v-card-text
+            id="merhaba"
+            style="font-weight: 400"
+          >
+            MERHABA,
+          </v-card-text>
+          <span id="loggedinmail">{{email2}}</span>
+          <v-divider></v-divider>
+        </v-sheet>
+          <div id="loggedinmenudiv">
+            
+            <span class="loggedinmenu"><a href="/">Hesabım</a></span>
+            <span class="loggedinmenu"><a href="/">Siparişlerim & İadelerim</a></span>
+            <span class="loggedinmenu"><a href="/">Wishlist</a></span>
+            <span class="loggedinmenu"><a href="/">Profilim</a></span>
+          </div>
+          <v-divider></v-divider>
+          <v-btn :ripple="false"
+            @click="logout()"
+            elevation="0"
+            style="margin-left: 280px; margin-bottom:-10px; margin-top:10px"
+            text
+            id="btnlogout"
+          >
+            <v-icon dark right style="margin:0px">mdi-power</v-icon>
+          </v-btn>
     </div>
 
     <v-navigation-drawer
@@ -292,6 +284,27 @@
 </template>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#btnlogout:hover{
+  background-color: white;
+}
+
+#loggedinmenudiv{
+  display:flex;
+  justify-content:space-between;
+  flex-direction: column;
+}
+
+.loggedinmenu{
+  font-weight: 400; 
+  font-size:18px;
+  margin-bottom: 5px;
+}
+
 #btnsifrealin {
   background-color: black;
   color: white;
@@ -368,6 +381,7 @@
 #sheet {
   position: relative;
   width: 520px;
+  margin-bottom: 10px;
 }
 
 #linksiparis {
@@ -402,6 +416,18 @@
 #campertext {
   font-size: 18px;
   padding-bottom: 0px;
+}
+
+#merhaba {
+  font-size: 14px;
+  padding: 0px;
+  padding-top: 24px;
+}
+
+#loggedinmail{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #expand {
@@ -463,7 +489,7 @@ import {
   signOut,
 } from "firebase/auth";
 export default {
-  el: '#app',
+  el: '#loggedinmail',
   data() {
     return {
       email: "",
