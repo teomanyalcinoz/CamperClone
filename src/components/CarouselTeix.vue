@@ -17,8 +17,8 @@
               <br />
               <v-text id="karst2">Şehrin Outdoor Tarzı</v-text>
               <br />
-              <v-btn id="kadınbtn" to="/kadın" elevation="0">Kadın</v-btn>
-              <v-btn id="erkekbtn" to="/erkek" elevation="0">Erkek</v-btn>
+              <v-btn id="kadınbtn" class="btn" to="/kadın" elevation="0">Kadın</v-btn>
+              <v-btn id="erkekbtn" class="btn" to="/erkek" elevation="0">Erkek</v-btn>
             </div>
           </v-carousel-item>
         </v-carousel>
@@ -28,6 +28,11 @@
 </template>
 
 <style scoped>
+.btn:hover{
+  background-color: black;
+  color: white;
+}
+
 #vapp {
   height: 500px;
 }

@@ -82,7 +82,7 @@
         <v-icon large>mdi-pinterest</v-icon>
         <v-icon large>mdi-youtube</v-icon>
       </div>
-      
+      <div id="langdiv">
         <img id="bayrak" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/2560px-Flag_of_Turkey.svg.png">
         <p>
                 <a
@@ -92,13 +92,18 @@
                 > Türkiye / Türkçe
                 </a>
           </p>
-        
+      </div>
       
     </v-row>
   </v-footer>
 </template>
 
 <style scoped>
+#langdiv{
+  display: flex;
+  padding-top: 16px;
+}
+
 #footer {
   font-size: small;
   background-color: #dfdfdf;
@@ -141,6 +146,32 @@
 #col3{
   padding: 40px; 
 }
+
+#col1{
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: white;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
+#col2{
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
+#col3{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
 
 #btnabone {
   font-size: 16px;

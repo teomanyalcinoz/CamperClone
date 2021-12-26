@@ -51,8 +51,8 @@
           <v-text class="sez"> Sezon Ortası İndirimi </v-text>
           <v-spacer></v-spacer>
           <v-text class="gifspan">%30'a Varan İndirim<br /> </v-text>
-          <v-btn id="btnKadın" depressed to="/kadın"> Kadın </v-btn>
-          <v-btn id="btnErkek" depressed to="/erkek"> Erkek </v-btn>
+          <v-btn id="btnKadın" class="butonlar" depressed to="/kadın"> Kadın </v-btn>
+          <v-btn id="btnErkek" class="butonlar" depressed to="/erkek"> Erkek </v-btn>
         </v-img>
       </v-card>
     </v-col>
@@ -70,7 +70,7 @@
           <v-spacer></v-spacer>
           <v-text class="gifspan">The Walking Society<br /> </v-text>
           <v-spacer></v-spacer>
-          <v-btn id="kampanya" depressed> Kampanyaya Göz Atın </v-btn>
+          <v-btn id="kampanya" class="butonlar" depressed> Kampanyaya Göz Atın </v-btn>
         </v-img>
       </v-card>
     </v-col>
@@ -223,6 +223,7 @@
 .butonlar {
   text-transform: none;
   position: relative;
+  border-radius: 0px;
 }
 
 .itemsdiv {
@@ -234,6 +235,11 @@
 #btn3:hover,
 #btn4:hover,
 #btn5:hover {
+  background-color: black;
+  color: white;
+}
+
+.butonlar:hover{
   background-color: black;
   color: white;
 }
