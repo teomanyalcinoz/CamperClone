@@ -1,0 +1,54 @@
+{
+    "content": {
+        "categoryId": 2,
+        "id": 1,
+        "type": "Camper Erkek",
+        "name": "Runner K21",
+        "price": 1599.00,
+        "colorOptions": [
+            {
+                "name": "Gri",
+                "color": "#808080"
+            },
+            {
+                "name": "Mavi",
+                "color": "#0000FF"
+            },
+            {
+                "name": "Siyah",
+                "color": "#000000"
+            },
+            {
+                "name": "Beyaz",
+                "color": "#FFFFFF"
+            }
+        ],
+        "sizes": [
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45"
+        ],
+        "details": {
+            "explaination": "Runner K21, retro esintili bir yaklaşıma, çağdaş bir dokunuşla oluşturulmuş Camper Runner ailesinin son üyesidir.",
+            "properties": [
+                "Deri (Leather Working Group Sertifikalı",
+                "Gri",
+                "Hafiflik için EVA Taban (20% geri dönüştürülmüş XL EXTRALIGHT® Hafiflik için",
+                "OrthoLite® Üst Düzey Rahatlık İçin",
+                "51% Deri 49% Tekstil (100% geri dönüştürülmüş PET)"
+            ]
+        }
+    },
+    "cartImage": "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K100744-005_LF.webp",
+    "photos": [
+        "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K100744-005_DF.webp",
+        "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K100744-005_LF.webp",
+        "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K100744-005_TF.webp",
+        "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K100744-005_CF.webp",
+        "https://cloud.camper.com/is/image/JGVzaG9wMDNtYmlnZ3JleSQ=/K100744-005_SF.webp"
+    ]
+}
