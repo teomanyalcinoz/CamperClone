@@ -1,8 +1,9 @@
 <template>
   <div class="kadın">
     <h1 id="baslık">Kadın Ayakkabıları</h1>
+        <v-btn to="urundty">Urun detay</v-btn>
+    
     <Filt />
-
     <v-row id="row">
       <v-col
         v-for="(item, index) in this.$store.state.itemskadin"
@@ -40,6 +41,7 @@
 
 <script>
 import Filt from "../components/Filter.vue";
+
 export default {
   beforeCreate() {
     this.$store.dispatch("fetchItemsForKadin");
