@@ -3,7 +3,6 @@ import AboneOl from "@/components/AboneOl.vue"
 
 
 describe('AboneOl.vue', () => {
-    
     it('renders profile link', () => {
         const wrapper = mount(AboneOl, {
             data() {
@@ -15,7 +14,6 @@ describe('AboneOl.vue', () => {
         const proflink = wrapper.get('#profile');
         expect(proflink.text()).toEqual("my profile");
     });
-
 
 
     it('should not renders profile link', () => {

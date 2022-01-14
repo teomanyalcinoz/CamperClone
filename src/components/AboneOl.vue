@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <button @click="showModal = true" class="button" outlined>Abone Ol</button>
+     <button id="jest" @click="onClose" />
+    <button id="modalbtn" @click="showModal = true" class="button" outlined>Abone Ol</button>
     <a v-if="isLoggedin" id="profile">my profile</a>
     <transition name="fade" appear>
       <div
@@ -34,6 +35,7 @@
                 ></v-text-field> </v-card
             ></v-col>
           </v-row>
+         
           <button id="abonBtn" @click="showModal = false" class="button">
             Abone Ol
           </button>
@@ -134,6 +136,7 @@ body {
 </style>
 <script>
 export default {
+  props: ["onClose"],
   data() {
     return {
       isLoggedin: false,

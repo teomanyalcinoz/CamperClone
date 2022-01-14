@@ -2,7 +2,7 @@
   <div>
     <v-app id="vapp">
       <v-card>
-        <v-carousel :show-arrows="false" hide-delimiters height="600" cycle>
+        <v-carousel :show-arrows="false" hide-delimiters height="600" cycle id="caro">
           <v-carousel-item
             v-for="(item, i) in items"
             :key="i"
@@ -11,6 +11,7 @@
             transition="fade-transition"
             eager
             height="100%"
+            
           >
             <div id="karstDiv">
               <v-text id="karst">KARST</v-text>
