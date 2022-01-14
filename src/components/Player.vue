@@ -5,16 +5,24 @@
         <v-container>
           <v-card>
             <v-layout row wrap id="wrap">
-              <v-flex xs12 md6 id="first" style="padding:20px">
-                <span style="font-size:40px; ">The Walking Society</span>
-                <span style="margin-left:120px;">11. Sayı</span>
-                <br/>
-                <span style="font-size:26px;">Kypros</span><br/>
-                <v-btn id="okubtn" class="twsbtn" elevation="0">Dergiyi Oku</v-btn>
-                <v-btn id="indirbtn" class="twsbtn" elevation="0">Dergiyi İndir</v-btn>
+              <v-flex xs12 md6 id="first" style="padding: 20px">
+                <span style="font-size: 40px" data-test="tws"
+                  >The Walking Society</span
+                >
+                <span style="margin-left: 120px">11. Sayı</span>
+                <br />
+                <span style="font-size: 26px">Kypros</span><br />
+                <v-btn id="okubtn" class="twsbtn" elevation="0"
+                  >Dergiyi Oku</v-btn
+                >
+                <v-btn id="indirbtn" class="twsbtn" elevation="0"
+                  >Dergiyi İndir</v-btn
+                >
               </v-flex>
               <v-flex xs6 sm4 md6 id="second">
-                <div style="padding:24px; font-size:24px; margin-right:-300px">
+                <div
+                  style="padding: 24px; font-size: 24px; margin-right: -300px"
+                >
                   Yürümek, seyahat etmek veya bir yerden bir yere gitmek
                   demektir. Aynı zamanda ilerlemek, iyileştirmek, geliştirmek ve
                   yenilik yapmak demektir. TWS, farklı sosyal, kültürel,
@@ -42,9 +50,8 @@
 </template>
 
 <style scoped>
-
-#indirbtn{
-  margin-top:30px;
+#indirbtn {
+  margin-top: 30px;
   border-radius: 0;
   border-style: solid;
   border-width: 1px;
@@ -55,9 +62,9 @@
   transition: 0.3s;
 }
 
-#okubtn{
-  margin-top:30px; 
-  margin-right:10px;
+#okubtn {
+  margin-top: 30px;
+  margin-right: 10px;
   border-radius: 0;
   border-style: solid;
   border-width: 1px;
@@ -68,12 +75,12 @@
   transition: 0.3s;
 }
 
-#indirbtn:hover{
+#indirbtn:hover {
   background-color: white;
   color: black;
 }
 
-#okubtn:hover{
+#okubtn:hover {
   background-color: white;
   color: black;
 }

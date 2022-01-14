@@ -48,7 +48,20 @@ export default {
     msg: String,
   },
   data: () => ({
-    items: ["Camper'ın Seçimi", "Fiyat(ASC)", "Fiyat(DESC)"],
+    items: [
+      {
+        id: 1,
+        text: "Camper'ın Seçimi",
+      },
+      {
+        id: 2,
+        text: "Fiyat(ASC)",
+      },
+      {
+        id: 3,
+        text: "Fiyat(DESC)",
+      },
+    ],
   }),
 };
 </script>

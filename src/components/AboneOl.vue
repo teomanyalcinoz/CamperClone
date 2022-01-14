@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <button @click="showModal = true" class="button" outlined>Abone Ol</button>
+    <a v-if="isLoggedin" id="profile">my profile</a>
     <transition name="fade" appear>
       <div
         class="modal-overlay"
@@ -135,6 +136,7 @@ body {
 export default {
   data() {
     return {
+      isLoggedin: false,
       showModal: false,
     };
   },
