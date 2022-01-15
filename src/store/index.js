@@ -1,7 +1,7 @@
 import Vuex from "vuex";
 import axios from 'axios'
 import Vue from 'vue'
-
+import { getItems } from '../services/itemService'
 Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
@@ -39,6 +39,7 @@ const store = new Vuex.Store({
         async fetchItemsForErkek(context) {
             return await axios.get("/api/itemserkek").then(response => {
                 context.commit("setitemserkek", response.data);
+                getItems();
             })
         },
         async fetchItemsForCocuk(context) {
