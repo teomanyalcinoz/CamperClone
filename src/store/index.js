@@ -2,6 +2,9 @@ import Vuex from "vuex";
 import axios from 'axios'
 import Vue from 'vue'
 import { getItems } from '../services/itemService'
+import { getItemsByCategory } from '../services/getItemsByCategory'
+import { getItemById } from '../services/getItemById'
+
 Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
@@ -34,17 +37,20 @@ const store = new Vuex.Store({
         async fetchItemsForKadin(context) {
             return await axios.get("/api/itemskadin").then(response => {
                 context.commit("setitemskadin", response.data);
+                getItemsByCategory(1);
             })
         },
         async fetchItemsForErkek(context) {
             return await axios.get("/api/itemserkek").then(response => {
                 context.commit("setitemserkek", response.data);
-                getItems();
+                getItemsByCategory(2);
+                getItemById(8);
             })
         },
         async fetchItemsForCocuk(context) {
             return await axios.get("/api/itemscocuk").then(response => {
                 context.commit("setitemscocuk", response.data);
+                getItemsByCategory(3);
             })
         },
 
