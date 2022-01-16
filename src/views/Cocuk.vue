@@ -4,14 +4,18 @@
     <Filt />
     <v-row id="row" style="padding-top: 50px">
       <v-col
-        v-for="(item, index) in this.$store.state.itemscocuk"
-        :key="index"
+        v-for="item in getItemByCategoryId"
+        :key="item.id"
         cols="3"
         style="padding: 0px"
       >
         <div id="divayakkabi">
           <a href="#/urundty" class="fill-div">
-            <v-img :src="item.image" aspect-ratio="1" class="grey lighten-2">
+            <v-img
+              :src="item.cartImage"
+              aspect-ratio="1"
+              class="grey lighten-2"
+            >
               <template v-slot:placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
                   <v-progress-circular
@@ -31,12 +35,10 @@
                 color: black;
               "
             >
-              <div v-for="item in getItemByCategoryId" :key="item.id">
-                <span style="z-index: 1; margin-bottom: 6px">{{
-                  item.content.name
-                }}</span>
-                <span style="z-index: 1">{{ item.content.price }}</span>
-              </div>
+              <span style="z-index: 1; margin-bottom: 6px"
+                >{{ item.content.name }}
+              </span>
+              <span style="z-index: 1">{{ item.content.price }}</span>
             </div>
           </a>
         </div>
@@ -89,9 +91,6 @@ export default {
     return {
       items: "",
     };
-  },
-  beforeCreate() {
-    this.$store.dispatch("fetchItemsForCocuk");
   },
   name: "cocuk",
   components: {

@@ -1,19 +1,17 @@
 <template>
   <div class="kadın">
     <h1 id="baslık">Kadın Ayakkabıları</h1>
-    <v-btn>Urun detay</v-btn>
-
     <Filt />
     <v-row id="row" style="padding-top: 50px">
       <v-col
-        v-for="(item, index) in this.$store.state.itemskadin"
-        :key="index"
+        v-for="item in getItemByCategoryId"
+        :key="item.id"
         cols="3"
         style="padding: 0px"
       >
         <div id="divayakkabi">
           <a href="#/urundty" class="fill-div">
-            <v-img :src="item.image" aspect-ratio="1">
+            <v-img :src="item.cartImage" aspect-ratio="1">
               <template v-slot:placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
                   <v-progress-circular
@@ -33,12 +31,10 @@
                 color: black;
               "
             >
-              <div v-for="item in items" :key="item.id">
-                <span style="z-index: 1; margin-bottom: 6px">{{
-                  item.content.name
-                }}</span>
-                <span style="z-index: 1"> {{ item.content.price }} </span>
-              </div>
+              <span style="z-index: 1; margin-bottom: 6px">
+                {{ item.content.name }}
+              </span>
+              <span style="z-index: 1"> {{ item.content.price }} </span>
             </div>
           </a>
         </div>
@@ -74,27 +70,30 @@
 <script>
 import gql from "graphql-tag";
 import Filt from "../components/Filter.vue";
+const query = gql`
+  {
+    getItemByCategoryId(id: 1) {
+      content {
+        name
+        price
+        id
+      }
+      cartImage
+    }
+  }
+`;
 export default {
-  beforeCreate() {
-    this.$store.dispatch("fetchItemsForKadin");
+  data() {
+    return {
+      items: "",
+    };
   },
+  name: "kadın",
   components: {
     Filt,
   },
-  name: "kadın",
   apollo: {
-    items: gql`
-      {
-        items {
-          content {
-            name
-            price
-            id
-          }
-          cartImage
-        }
-      }
-    `,
+    getItemByCategoryId: query,
   },
 };
 </script>

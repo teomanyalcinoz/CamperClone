@@ -8,20 +8,28 @@
       <Player />
       <v-container>
         <v-card>
-          <v-layout id="grid-container" row style="padding-bottom:100px">
+          <v-layout id="grid-container" row style="padding-bottom: 100px">
             <v-flex xs12 md6>
-              <div style="padding:20px; color:white;">
-                <span style="font-size:x-large">
-                THE WALKING SOCIETY dergisi, dünyayı ilerleten ve olumlu yönde
-                değiştiren insanlardan bilgiler içeriyor.</span>
-                <div style="padding:20px; color:white; margin-right:-350px; margin-left:400px">
+              <div style="padding: 20px; color: white">
+                <span style="font-size: x-large">
+                  THE WALKING SOCIETY dergisi, dünyayı ilerleten ve olumlu yönde
+                  değiştiren insanlardan bilgiler içeriyor.</span
+                >
+                <div
+                  style="
+                    padding: 20px;
+                    color: white;
+                    margin-right: -350px;
+                    margin-left: 400px;
+                  "
+                >
                   TWS'nin ilk sayısı 2001'de yayınlandı ve konusu Camper'ın
                   memleketi olan Mallorca adasıydı. Akdeniz'in farklı
                   bölgelerini de kapsayan bu seri, 2005'te sona ermeden önce
                   dört yıl ve sekiz sayı sürdü. Bu 11. sayı, ilgi çekici bir
                   kronolojiye ve karmaşık arkeolojiye sahip bir adanın
                   araştırması ve keşfi. Bu yolculuk, adanın Akdeniz özünden ödün
-                  vermeden yolculuğunu sorgluyor. 
+                  vermeden yolculuğunu sorgluyor.
                 </div>
               </div>
             </v-flex>
