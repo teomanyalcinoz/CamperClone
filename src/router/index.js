@@ -73,6 +73,12 @@ const routes = [{
         component: () =>
             import ('@/views/Urundty.vue'),
     },
+    {
+        path: "/sepet",
+        name: "sepet",
+        component: () =>
+            import ('@/views/Sepet.vue'),
+    },
 
 ]
 

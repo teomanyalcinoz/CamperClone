@@ -66,7 +66,7 @@
           <button class="varnumara">45</button>
           
       </div>
-      <v-btn id="btn" elevation="0">SEPETE EKLE</v-btn>
+      <v-btn id="btn" elevation="0" to="/sepet">SEPETE EKLE</v-btn>
       <a href="javascript:void(0)" style="font-size:16px; color:black; margin-top:14px; margin-bottom:20px;">3,6 veya 8 taksit ile ödeme imkanı</a>
       <div style="display:flex; flex-direction:row;">
         <v-checkbox 
