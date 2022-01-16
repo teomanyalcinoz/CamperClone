@@ -31,11 +31,11 @@
                 color: black;
               "
             >
-              <span style="z-index: 1; margin-bottom: 6px">Twins</span>
-              <span style="z-index: 1"> 1500</span>
-
-              <div v-for="item in items" :key="item.id">
-                {{ item.content.name }}
+              <div v-for="item in getItemByCategoryId" :key="item.id">
+                <span style="z-index: 1; margin-bottom: 6px">{{
+                  item.content.name
+                }}</span>
+                <span style="z-index: 1">{{ item.content.price }}</span>
               </div>
             </div>
           </a>
@@ -44,7 +44,6 @@
     </v-row>
   </div>
 </template>
-
 <style scoped>
 #ayakkabidiv {
   height: auto;
@@ -72,9 +71,24 @@
 import gql from "graphql-tag";
 import Filt from "../components/Filter.vue";
 import Player from "../components/Player.vue";
+
+const query = gql`
+  {
+    getItemByCategoryId(id: 3) {
+      content {
+        name
+        price
+        id
+      }
+      cartImage
+    }
+  }
+`;
 export default {
   data() {
-    return {};
+    return {
+      items: "",
+    };
   },
   beforeCreate() {
     this.$store.dispatch("fetchItemsForCocuk");
@@ -85,16 +99,7 @@ export default {
     Player,
   },
   apollo: {
-    items: gql`
-      {
-        getItemByCategoryId(id: 3) {
-          content {
-            name
-            price
-          }
-        }
-      }
-    `,
+    getItemByCategoryId: query,
   },
 };
 </script>
