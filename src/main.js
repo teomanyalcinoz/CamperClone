@@ -6,6 +6,7 @@ import Vuex from 'vuex'
 import store from './store/index'
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { createProvider } from './vue-apollo'
 Vue.use(Vuex)
 Vue.config.productionTip = false
 
@@ -29,5 +30,6 @@ new Vue({
   router,
   vuetify,
   store,
+  apolloProvider: createProvider(),
   render: h => h(App)
 }).$mount('#app')
