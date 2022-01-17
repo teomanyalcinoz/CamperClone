@@ -2,29 +2,9 @@
   <div class="kadın">
     <h1 id="baslık">Kadın Ayakkabıları</h1>
 
-    <v-btn>
-      <router-link
-        :to="{ name: 'urundty', params: { id: 1, title: 'ilk ayakkabi' } }"
-      >
-        1. ayakkabi
-      </router-link>
-    </v-btn>
-
-    <v-btn>
-      <router-link
-        :to="{ name: 'urundty', params: { id: 2, title: 'ikinci ayakkabi' } }"
-        >2. ayakkabi</router-link
-      ></v-btn
-    >
-    <v-btn>
-      <router-link
-        :to="{ name: 'urundty', params: { id: 3, title: 'ucuncu ayakkabi' } }"
-        >3.ayakkabi</router-link
-      >
-    </v-btn>
     <Filt />
 
-    <v-row id="row" style="padding-top: 50px;">
+    <v-row id="row" style="padding-top: 50px">
       <v-col
         v-for="item in getItemByCategoryId"
         :key="item.id"
@@ -32,9 +12,18 @@
         style="padding: 0px"
       >
         <div id="divayakkabi">
-          
           <router-link
-          :to="{ name: 'urundty', params: { id:  item.content.id, title: 'ilk ayakkabi' } }" style="text-decoration:none;"
+            :to="{
+              name: 'urundty',
+              params: {
+                id: item.content.id,
+                isim: item.content.name,
+                fiyat: item.content.price,
+                resim: item.cartImage,
+                phot: item.photos,
+              },
+            }"
+            style="text-decoration: none"
           >
             <v-img :src="item.cartImage" aspect-ratio="1">
               <template v-slot:placeholder>
@@ -56,13 +45,12 @@
                 color: black;
               "
             >
-              <span style="z-index: 1; margin-bottom: 6px;">
+              <span style="z-index: 1; margin-bottom: 6px">
                 {{ item.content.name }}
               </span>
-              <span style="z-index: 1;"> ₺{{ item.content.price }} </span>
+              <span style="z-index: 1"> ₺{{ item.content.price }} </span>
             </div>
           </router-link>
-          
         </div>
       </v-col>
     </v-row>
@@ -103,8 +91,12 @@ const query = gql`
         name
         price
         id
+        details {
+          explaination
+        }
       }
       cartImage
+      photos
     }
   }
 `;
