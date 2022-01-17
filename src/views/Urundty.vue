@@ -24,7 +24,7 @@
       <span style="margin-bottom: 20px; font-size: 30px">{{
         $route.params.isim
       }}</span>
-      <span style="margin-bottom: 16px"> {{ $route.params.fiyat }} </span>
+      <span style="margin-bottom: 16px"> ₺{{ $route.params.fiyat }} </span>
       <span style="margin-top: 22px; margin-bottom: 16px; font-size: 15px">
         {{ $route.params.tip }}
       </span>
@@ -79,9 +79,33 @@
           margin-bottom: 14px;
         "
       >
-        <div v-for="n in 6" :key="n">
-          <v-btn>{{ $route.params.numara[n] }}</v-btn>
-        </div>
+        <button
+          id="btn1"
+          v-bind:class="{ white: !clicked, blue: clicked }"
+          v-on:click="clicked = !clicked"
+        >
+          {{ $route.params.numara[0] }}
+        </button>
+        <button v-bind:class="{ white: !clicked2, blue: clicked2 }"
+          v-on:click="clicked2 = !clicked2">
+          {{ $route.params.numara[1] }}
+        </button>
+        <button v-bind:class="{ white: !clicked3, blue: clicked3 }"
+          v-on:click="clicked3 = !clicked3">
+          {{ $route.params.numara[2] }}
+        </button>
+        <button v-bind:class="{ white: !clicked4, blue: clicked4 }"
+          v-on:click="clicked4 = !clicked4">
+          {{ $route.params.numara[3] }}
+        </button>
+        <button v-bind:class="{ white: !clicked5, blue: clicked5 }"
+          v-on:click="clicked5 = !clicked5">
+          {{ $route.params.numara[4] }}
+        </button>
+        <button v-bind:class="{ white: !clicked6, blue: clicked6 }"
+          v-on:click="clicked6 = !clicked6">
+          {{ $route.params.numara[5] }}
+        </button>
       </div>
       <v-btn id="btn" elevation="0" to="/sepet">SEPETE EKLE</v-btn>
       <a
@@ -130,6 +154,26 @@
       />
       <v-expansion-panels>
         <v-expansion-panel id="expanel">
+          <v-expansion-panel-header>AÇIKLAMA</v-expansion-panel-header>
+          <v-expansion-panel-content style="font-size: 14px">
+            <p style="margin-bottom: 20px">
+              {{ $route.params.aciklama }}
+            </p>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+        <v-expansion-panel id="expanel">
+          <v-expansion-panel-header>Özellikler</v-expansion-panel-header>
+          <v-expansion-panel-content
+            style="font-size: 14px"
+            v-for="n in 4"
+            :key="n"
+          >
+            <p style="margin-bottom: 20px">
+              {{ $route.params.ozellikler[n] }}
+            </p>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+        <v-expansion-panel id="expanel">
           <v-expansion-panel-header>AYAKKABI BAKIMI</v-expansion-panel-header>
           <v-expansion-panel-content style="font-size: 14px">
             <p style="margin-bottom: 20px">
@@ -159,6 +203,29 @@
 </template>
 
 <style>
+.white {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  color: black;
+  border-color: #e1e1e1;
+  font-size: 13px;
+  padding: 6px;
+  width: 40px;
+  
+}
+.blue {
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  border-color: #e1e1e1;
+  font-size: 13px;
+  padding: 6px;
+  width: 40px;
+
+}
+
 #btnpaylasin {
   background-color: white;
   color: black;
@@ -204,27 +271,13 @@
   color: black;
 }
 
-.yoknumara {
-  background-color: white;
-  border-style: solid;
-  border-width: 1px;
-  color: grey;
-  border-color: #e1e1e1;
-  font-size: 13px;
-  padding: 6px;
-}
 
-.varnumara {
+.blue:hover {
   background-color: white;
-  border-style: solid;
-  border-width: 1px;
   color: black;
-  border-color: #e1e1e1;
-  font-size: 13px;
-  padding: 6px;
 }
 
-.varnumara:hover {
+.white:hover {
   background-color: black;
   color: white;
 }
@@ -239,8 +292,16 @@ import gql from "graphql-tag";
 
 export default {
   data() {
-    return {};
+    return {
+      clicked: false,
+      clicked2: false,
+      clicked3: false,
+      clicked4: false,
+      clicked5: false,
+      clicked6: false,
+    };
   },
+
   name: "urundetay",
 };
 </script>

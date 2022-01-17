@@ -23,7 +23,8 @@
                 phot: item.photos,
                 tip: item.content.type,
                 numara: item.content.sizes,
-                
+                aciklama: item.content.details.explaination,
+                ozellikler: item.content.details.properties,
               },
             }"
             style="text-decoration: none"
@@ -96,6 +97,7 @@ const query = gql`
         id
         details {
           explaination
+          properties
         }
         type
         sizes
