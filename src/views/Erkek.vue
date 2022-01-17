@@ -11,7 +11,23 @@
         style="padding: 0px"
       >
         <div id="divayakkabi">
-          <a href="#/urundty" class="fill-div">
+          <router-link
+            :to="{
+              name: 'urundty',
+              params: {
+                id: item.content.id,
+                isim: item.content.name,
+                fiyat: item.content.price,
+                resim: item.cartImage,
+                phot: item.photos,
+                tip: item.content.type,
+                numara: item.content.sizes,
+                aciklama: item.content.details.explaination,
+                ozellikler: item.content.details.properties,
+              },
+            }"
+            style="text-decoration: none"
+          >
             <v-img
               :src="item.cartImage"
               aspect-ratio="1"
@@ -41,7 +57,7 @@
               </span>
               <span style="z-index: 1">₺{{ item.content.price }} </span>
             </div>
-          </a>
+          </router-link>
         </div>
       </v-col>
     </v-row>
@@ -83,8 +99,15 @@ const query = gql`
         name
         price
         id
+        details {
+          explaination
+          properties
+        }
+        type
+        sizes
       }
       cartImage
+      photos
     }
   }
 `;
