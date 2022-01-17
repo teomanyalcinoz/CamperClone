@@ -31,14 +31,14 @@
                 flex-direction: column;
                 margin-left: 30px;
                 margin-top: 16px;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 color: black;
               "
             >
               <span style="z-index: 1; margin-bottom: 6px"
                 >{{ item.content.name }}
               </span>
-              <span style="z-index: 1">{{ item.content.price }}</span>
+              <span style="z-index: 1">₺{{ item.content.price }}</span>
             </div>
           </a>
         </div>
