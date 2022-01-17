@@ -10,6 +10,7 @@
       column-gap: 80px;
     "
   >
+  <h1>{{ $route.params.id }} </h1>
     <div style="display: flex; flex-direction: column">
       <span style="font-size: x-large; font-weight: 400"
         >Alisveris SEPETİNİZDE</span
@@ -644,6 +645,7 @@
 }
 </style>
 <script>
+import gql from "graphql-tag";
 export default {
   data: () => ({
     items: ["Nakliye-Standart", "Mağazadan Teslim Al"],

@@ -109,7 +109,9 @@
       </div>
       <router-link :to="{
               name: 'sepet',
-              
+              params: {
+                id: $route.params.id
+              }
             }" style="text-decoration:none;">
       <v-btn id="btn" elevation="0">SEPETE EKLE</v-btn>
       </router-link>
