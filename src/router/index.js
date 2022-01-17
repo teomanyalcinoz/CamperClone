@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Post from '../views/Post.vue'
+import UrunDetay from '../views/UrunDetay.vue'
+import Urundty from '../views/Urundty.vue'
 import Erkek from "../views/Erkek.vue";
 import Kadın from "../views/Kadın.vue";
 import Cocuk from "../views/Cocuk.vue";
@@ -17,6 +20,11 @@ const routes = [{
     name: "Erkek",
     component: () =>
         import('@/views/Erkek.vue'),
+},
+{
+    path: "/post/:id",
+    name: "Post",
+    component: Post
 },
 {
     path: "/gift",
@@ -68,10 +76,16 @@ const routes = [{
         import('@/views/Register.vue'),
 },
 {
+    path: "/urundetay/:title",
+    name: "urundetay",
+    component: UrunDetay
+
+},
+{
     path: "/urundty",
     name: "urundty",
-    component: () =>
-        import('@/views/Urundty.vue'),
+    component: Urundty
+
 },
 {
     path: "/sepet",

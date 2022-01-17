@@ -1,7 +1,29 @@
 <template>
   <div class="kadın">
     <h1 id="baslık">Kadın Ayakkabıları</h1>
+
+    <v-btn>
+      <router-link
+        :to="{ name: 'urundetay', params: { id: 1, title: 'ilk ayakkabi' } }"
+      >
+        1. ayakkabi
+      </router-link>
+    </v-btn>
+
+    <v-btn>
+      <router-link
+        :to="{ name: 'urundetay', params: { id: 2, title: 'ikinci ayakkabi' } }"
+        >2. ayakkabi</router-link
+      ></v-btn
+    >
+    <v-btn>
+      <router-link
+        :to="{ name: 'urundetay', params: { id: 3, title: 'ucuncu ayakkabi' } }"
+        >3.ayakkabi</router-link
+      >
+    </v-btn>
     <Filt />
+
     <v-row id="row" style="padding-top: 50px">
       <v-col
         v-for="item in getItemByCategoryId"

@@ -6,6 +6,18 @@
       :style="{ width: '1800px' }"
     >
       <Player />
+      <router-link
+        :to="{ name: 'Post', params: { id: 1, title: 'My First Post' } }"
+        >My First Post</router-link
+      >
+      <router-link
+        :to="{ name: 'Post', params: { id: 2, title: 'My Second Post' } }"
+        >My Second Post</router-link
+      >
+      <router-link
+        :to="{ name: 'Post', params: { id: 3, title: 'My Third Post' } }"
+        >My Third Post</router-link
+      >
       <v-container>
         <v-card>
           <v-layout id="grid-container" row style="padding-bottom: 100px">
