@@ -25,9 +25,9 @@
         $route.params.isim
       }}</span>
       <span style="margin-bottom: 16px"> {{ $route.params.fiyat }} </span>
-      <span style="margin-top: 22px; margin-bottom: 16px; font-size: 15px"
-        >Beyaz renkli, deri ve süet spor ayakkabı</span
-      >
+      <span style="margin-top: 22px; margin-bottom: 16px; font-size: 15px">
+        {{ $route.params.tip }}
+      </span>
       <div
         style="
           display: flex;
@@ -52,14 +52,7 @@
         >
       </div>
       <div>
-        <img
-          src="https://cloud.camper.com/is/image/JGVzaG9wMDNiYWdncmV5JA==/K100743-013_L.webp"
-          style="width: 70px; height: 70px"
-        />
-        <img
-          src="https://cloud.camper.com/is/image/JGVzaG9wMDNiYWdncmV5JA==/K100743-015_L.webp"
-          style="margin-left: 10px; width: 70px; height: 70px"
-        />
+        <img :src="$route.params.phot[1]" style="width: 70px; height: 70px" />
       </div>
       <div
         style="
@@ -86,14 +79,9 @@
           margin-bottom: 14px;
         "
       >
-        <button class="yoknumara">39</button>
-        <button class="varnumara">40</button>
-        <button class="varnumara">41</button>
-        <button class="varnumara">40</button>
-        <button class="varnumara">42</button>
-        <button class="varnumara">43</button>
-        <button class="varnumara">44</button>
-        <button class="varnumara">45</button>
+        <div v-for="n in 6" :key="n">
+          <v-btn>{{ $route.params.numara[n] }}</v-btn>
+        </div>
       </div>
       <v-btn id="btn" elevation="0" to="/sepet">SEPETE EKLE</v-btn>
       <a

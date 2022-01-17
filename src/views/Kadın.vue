@@ -21,6 +21,9 @@
                 fiyat: item.content.price,
                 resim: item.cartImage,
                 phot: item.photos,
+                tip: item.content.type,
+                numara: item.content.sizes,
+                
               },
             }"
             style="text-decoration: none"
@@ -94,6 +97,8 @@ const query = gql`
         details {
           explaination
         }
+        type
+        sizes
       }
       cartImage
       photos
