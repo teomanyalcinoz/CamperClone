@@ -107,7 +107,12 @@
           {{ $route.params.numara[5] }}
         </button>
       </div>
-      <v-btn id="btn" elevation="0" to="/sepet">SEPETE EKLE</v-btn>
+      <router-link :to="{
+              name: 'sepet',
+              
+            }" style="text-decoration:none;">
+      <v-btn id="btn" elevation="0">SEPETE EKLE</v-btn>
+      </router-link>
       <a
         href="javascript:void(0)"
         style="
@@ -264,6 +269,7 @@
   border-color: black;
   border-width: 1px;
   font-weight: 400;
+  width: 100%;
 }
 
 #btn:hover {
