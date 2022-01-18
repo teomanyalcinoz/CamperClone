@@ -10,7 +10,6 @@
       column-gap: 80px;
     "
   >
-  <h1>{{ $route.params.id }} </h1>
     <div style="display: flex; flex-direction: column">
       <span style="font-size: x-large; font-weight: 400"
         >Alisveris SEPETİNİZDE</span
@@ -50,17 +49,17 @@
       />
       <div style="display: flex; flex-direction: row">
         <img
-          src="https://cloud.camper.com/is/image/JGVzaG9wMDNiYWdncmV5JA==/K100226-017_L.webp"
+          :src="$route.params.resim"
           style="width: 120px; margin: 10px 0px"
         />
         <div style="display: flex; flex-direction: column; padding: 12px">
-          <span>Runner</span>
+          <span>{{ $route.params.isim }}</span>
           <div id="sizefiyatcarpidiv">
             <div>
-              <span style="margin-right: 6px">SIZE</span>
-              <span>42</span>
+              <span style="margin-right: 6px">SIZE :</span>
+              <span>{{ $route.params.numara[3] }}</span>
             </div>
-            <span style="margin-left: -500px">₺1499</span>
+            <span style="margin-left: -500px">₺{{ $route.params.fiyat }}</span>
             <button><v-icon small>mdi-close</v-icon></button>
           </div>
         </div>
@@ -521,7 +520,7 @@
             "
           >
             <span>Ana Toplam</span>
-            <span>1499 TL</span>
+            <span>{{ $route.params.fiyat }} TL</span>
           </div>
           <div
             style="
@@ -552,7 +551,7 @@
             "
           >
             <span>Toplam</span>
-            <span>1499 TL</span>
+            <span>{{ $route.params.fiyat }} TL</span>
           </div>
           <v-btn id="btnsatinal" elevation="0">ŞİMDİ SATIN AL</v-btn>
           <div

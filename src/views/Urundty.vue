@@ -110,7 +110,11 @@
       <router-link :to="{
               name: 'sepet',
               params: {
-                id: $route.params.id
+                id: $route.params.id,
+                isim: $route.params.isim,
+                fiyat: $route.params.fiyat,
+                numara: $route.params.numara,
+                resim: $route.params.resim,
               }
             }" style="text-decoration:none;">
       <v-btn id="btn" elevation="0">SEPETE EKLE</v-btn>
@@ -280,10 +284,6 @@
 }
 
 
-.blue:hover {
-  background-color: white;
-  color: black;
-}
 
 .white:hover {
   background-color: black;
